@@ -1,0 +1,27 @@
+{
+  "judge_run1": {
+    "finished": "2026-11-05 14:26 UTC",
+    "model": "vertex-ai-claude-opus-4.8",
+    "seconds": 1301,
+    "seed": 20261105,
+    "top_n": null
+  },
+  "judge_run2": {
+    "finished": "2026-11-05 14:40 UTC",
+    "model": "vertex-ai-claude-opus-4.8",
+    "seconds": 793,
+    "seed": 20261105,
+    "top_n": null
+  },
+  "pool": {
+    "questions": 59,
+    "seconds": 282
+  },
+  "spend": {
+    "calls": 79,
+    "tokens_cached": 0,
+    "tokens_in": 2442872,
+    "tokens_out": 337508,
+    "usd": 22.717266
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "baseUrl": "http://localhost:3100",
+  "steps": [
+    { "action": "goto", "url": "/" },
+    { "action": "waitFor", "selector": "[data-testid=api-status]" },
+    { "action": "highlight", "selector": "[data-testid=api-status]" },
+    { "action": "screenshot", "name": "C1-home-highlight" },
+    { "action": "screenshot", "name": "C1-home-crop", "selector": "section" }
+  ]
+}

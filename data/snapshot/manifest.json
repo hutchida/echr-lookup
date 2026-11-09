@@ -1,0 +1,2881 @@
+[
+ {
+  "item_id": "001-4596",
+  "case_name": "ALIDJAH-ANYAME v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "39633/98"
+  ],
+  "ecli": "ECLI:CE:ECHR:1999:0504DEC003963398",
+  "doc_type": "decision",
+  "chamber": "Chamber",
+  "date": "1999-05-04",
+  "articles": [
+   "3",
+   "8",
+   "8-1",
+   "10",
+   "11"
+  ],
+  "outcome_raw": "Inadmissible",
+  "outcome": "inadmissible",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 4,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-4596",
+  "sha256": "ca76d60daecbe86a65042b57e0733eec10c7d1fac9da54550a379ce0911f735e",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:20Z",
+  "format": "html",
+  "path": "hudoc/001-4596.html"
+ },
+ {
+  "item_id": "001-4648",
+  "case_name": "AJAYI AND OTHERS v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "27663/95"
+  ],
+  "ecli": "ECLI:CE:ECHR:1999:0622DEC002766395",
+  "doc_type": "decision",
+  "chamber": "Chamber",
+  "date": "1999-06-22",
+  "articles": [
+   "3",
+   "8",
+   "8-1",
+   "14"
+  ],
+  "outcome_raw": "Inadmissible",
+  "outcome": "inadmissible",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 4,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-4648",
+  "sha256": "6e1c9bdcb680b64f6f2522ba718a0d729ae7d448243b807370c33c6c59cf9aec",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:19Z",
+  "format": "html",
+  "path": "hudoc/001-4648.html"
+ },
+ {
+  "item_id": "001-5038",
+  "case_name": "BENSAID v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "44599/98"
+  ],
+  "ecli": "ECLI:CE:ECHR:2000:0125DEC004459998",
+  "doc_type": "decision",
+  "chamber": "Chamber",
+  "date": "2000-01-25",
+  "articles": [
+   "3",
+   "8",
+   "8-1",
+   "13"
+  ],
+  "outcome_raw": "Admissible",
+  "outcome": "admissible",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 4,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-5038",
+  "sha256": "2720e0614f12b12c12359b6d71409ac55c90b9b97a06fb574a55da9303e83053",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:33Z",
+  "format": "html",
+  "path": "hudoc/001-5038.html"
+ },
+ {
+  "item_id": "001-5105",
+  "case_name": "T.I. v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "43844/98"
+  ],
+  "ecli": "ECLI:CE:ECHR:2000:0307DEC004384498",
+  "doc_type": "decision",
+  "chamber": "Chamber",
+  "date": "2000-03-07",
+  "articles": [
+   "3",
+   "13"
+  ],
+  "outcome_raw": "Inadmissible",
+  "outcome": "inadmissible",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 1,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-5105",
+  "sha256": "9e80215970215dde9ca514db809e8822b8aafc3be21b2c5f05106bc6c6e71932",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:18Z",
+  "format": "html",
+  "path": "hudoc/001-5105.html"
+ },
+ {
+  "item_id": "001-5425",
+  "case_name": "ZHU v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "36790/97"
+  ],
+  "ecli": "ECLI:CE:ECHR:2000:0912DEC003679097",
+  "doc_type": "decision",
+  "chamber": "Chamber",
+  "date": "2000-09-12",
+  "articles": [
+   "3",
+   "35",
+   "35-1"
+  ],
+  "outcome_raw": "Inadmissible",
+  "outcome": "inadmissible",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 3,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-5425",
+  "sha256": "872382c2faec6c26ceb08805c36103437a9ba2d4155c2f1a2220c51613d9918a",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:17Z",
+  "format": "html",
+  "path": "hudoc/001-5425.html"
+ },
+ {
+  "item_id": "001-72783",
+  "case_name": "Z. and T. v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "27034/05"
+  ],
+  "ecli": "ECLI:CE:ECHR:2006:0228DEC002703405",
+  "doc_type": "decision",
+  "chamber": "Chamber",
+  "date": "2006-02-28",
+  "articles": [
+   "9",
+   "9-1",
+   "8",
+   "8-1"
+  ],
+  "outcome_raw": "Inadmissible",
+  "outcome": "inadmissible",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 1,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-72783",
+  "sha256": "bebeddc285e895138e523a8d1d367f4a7612045b855ea9abc11d0fd023d3450a",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:34Z",
+  "format": "html",
+  "path": "hudoc/001-72783.html"
+ },
+ {
+  "item_id": "001-90500",
+  "case_name": "K.R.S. v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "32733/08"
+  ],
+  "ecli": "ECLI:CE:ECHR:2008:1202DEC003273308",
+  "doc_type": "decision",
+  "chamber": "Chamber",
+  "date": "2008-12-02",
+  "articles": [
+   "3",
+   "13",
+   "5",
+   "5-1-f"
+  ],
+  "outcome_raw": "Inadmissible",
+  "outcome": "inadmissible",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 3,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-90500",
+  "sha256": "8cae54d6b7290fabe4b4b4ce816d6ea9a322885e0e9270197117e6331b33e995",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:10Z",
+  "format": "html",
+  "path": "hudoc/001-90500.html"
+ },
+ {
+  "item_id": "001-93398",
+  "case_name": "AL-SAADOON AND MUFDHI v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "61498/08"
+  ],
+  "ecli": "ECLI:CE:ECHR:2009:0630DEC006149808",
+  "doc_type": "decision",
+  "chamber": "Chamber",
+  "date": "2009-06-30",
+  "articles": [
+   "1",
+   "2",
+   "2-1",
+   "3",
+   "6",
+   "6-1",
+   "13",
+   "34",
+   "P13-1"
+  ],
+  "outcome_raw": "Partly admissible;Partly inadmissible",
+  "outcome": "partly_inadmissible",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 2,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-93398",
+  "sha256": "e799c250278df6e78d9ba1c9d062fdc2cabbcb615fa3eee7c10a126274e5d487",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:32Z",
+  "format": "html",
+  "path": "hudoc/001-93398.html"
+ },
+ {
+  "item_id": "001-95232",
+  "case_name": "ANDREWS v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "46263/06"
+  ],
+  "ecli": "ECLI:CE:ECHR:2009:0929DEC004626306",
+  "doc_type": "decision",
+  "chamber": "Chamber",
+  "date": "2009-09-29",
+  "articles": [
+   "3",
+   "8"
+  ],
+  "outcome_raw": "Inadmissible",
+  "outcome": "inadmissible",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 4,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-95232",
+  "sha256": "b828c7cd05cb85d0c8fd99824b04c8e1dbb05aabfeb1cc6d2670447dd49fcfae",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:09Z",
+  "format": "html",
+  "path": "hudoc/001-95232.html"
+ },
+ {
+  "item_id": "001-96380",
+  "case_name": "KHAN MANWAR v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "19641/07"
+  ],
+  "ecli": "ECLI:CE:ECHR:2009:1208DEC001964107",
+  "doc_type": "decision",
+  "chamber": "Chamber",
+  "date": "2009-12-08",
+  "articles": [
+   "8",
+   "37",
+   "37-1"
+  ],
+  "outcome_raw": "Inadmissible",
+  "outcome": "inadmissible",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 4,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-96380",
+  "sha256": "6fcbeb7297acb83e04b6ae8d26f0717eb4f338c4e6648b5177f634ba0d4883a4",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:08Z",
+  "format": "html",
+  "path": "hudoc/001-96380.html"
+ },
+ {
+  "item_id": "001-97175",
+  "case_name": "YESUFA v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "7347/08"
+  ],
+  "ecli": "ECLI:CE:ECHR:2010:0126DEC000734708",
+  "doc_type": "decision",
+  "chamber": "Chamber",
+  "date": "2010-01-26",
+  "articles": [
+   "8"
+  ],
+  "outcome_raw": "Inadmissible",
+  "outcome": "inadmissible",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 4,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-97175",
+  "sha256": "b4467ba78a6f35e49493ece30f63629564e9a9652cdfb5053e886dd172cc201f",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:07Z",
+  "format": "html",
+  "path": "hudoc/001-97175.html"
+ },
+ {
+  "item_id": "001-98645",
+  "case_name": "MIAH v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "53080/07"
+  ],
+  "ecli": "ECLI:CE:ECHR:2010:0427DEC005308007",
+  "doc_type": "decision",
+  "chamber": "Chamber",
+  "date": "2010-04-27",
+  "articles": [
+   "3",
+   "7",
+   "8"
+  ],
+  "outcome_raw": "Inadmissible",
+  "outcome": "inadmissible",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 4,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-98645",
+  "sha256": "5f65310442a7a0c785cb100739e98b206d56be2b3c69cb5845e604c0a7522fa0",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:05Z",
+  "format": "html",
+  "path": "hudoc/001-98645.html"
+ },
+ {
+  "item_id": "001-99876",
+  "case_name": "BABAR AHMAD AND OTHERS v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "24027/07",
+   "11949/08",
+   "36742/08"
+  ],
+  "ecli": "ECLI:CE:ECHR:2010:0706DEC002402707",
+  "doc_type": "decision",
+  "chamber": "Chamber",
+  "date": "2010-07-06",
+  "articles": [
+   "2",
+   "3",
+   "5",
+   "6",
+   "6-1",
+   "8",
+   "14"
+  ],
+  "outcome_raw": "Partly admissible;Partly inadmissible",
+  "outcome": "partly_inadmissible",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 4,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-99876",
+  "sha256": "aee6598e5eef859fae0bba781b595655f6f73d12dc5eef71db9ecbdf13f617af",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:31Z",
+  "format": "html",
+  "path": "hudoc/001-99876.html"
+ },
+ {
+  "item_id": "001-105173",
+  "case_name": "ANAM v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "21783/08"
+  ],
+  "ecli": "ECLI:CE:ECHR:2011:0607DEC002178308",
+  "doc_type": "decision",
+  "chamber": "Chamber",
+  "date": "2011-06-07",
+  "articles": [
+   "2",
+   "3",
+   "8"
+  ],
+  "outcome_raw": "Inadmissible",
+  "outcome": "inadmissible",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 4,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-105173",
+  "sha256": "f80dfa144183ae32af67b652ae707f20c4f98df2261aaad729e227475d449f9e",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:03Z",
+  "format": "html",
+  "path": "hudoc/001-105173.html"
+ },
+ {
+  "item_id": "001-111361",
+  "case_name": "H.A.L. v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "61533/10"
+  ],
+  "ecli": "ECLI:CE:ECHR:2012:0522DEC006153310",
+  "doc_type": "decision",
+  "chamber": "Chamber",
+  "date": "2012-05-22",
+  "articles": [
+   "2",
+   "3",
+   "35"
+  ],
+  "outcome_raw": "Inadmissible",
+  "outcome": "inadmissible",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 4,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-111361",
+  "sha256": "bf6de82513f6debd81a4cf4bdf8fc7a483ef4e2edc2efdeaa357124320f1ec60",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:00Z",
+  "format": "html",
+  "path": "hudoc/001-111361.html"
+ },
+ {
+  "item_id": "001-113684",
+  "case_name": "ABDI IBRAHIM v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "14535/10"
+  ],
+  "ecli": "ECLI:CE:ECHR:2012:0918DEC001453510",
+  "doc_type": "decision",
+  "chamber": "Chamber",
+  "date": "2012-09-18",
+  "articles": [
+   "3",
+   "8",
+   "35"
+  ],
+  "outcome_raw": "Inadmissible",
+  "outcome": "inadmissible",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 4,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-113684",
+  "sha256": "16a60ef7d077498e229ccdb067e348d5443dc7aa462a4a42ca6ca93f4525c2fe",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:59Z",
+  "format": "html",
+  "path": "hudoc/001-113684.html"
+ },
+ {
+  "item_id": "001-114508",
+  "case_name": "M.S. v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "56090/08"
+  ],
+  "ecli": "ECLI:CE:ECHR:2012:1016DEC005609008",
+  "doc_type": "decision",
+  "chamber": "Chamber",
+  "date": "2012-10-16",
+  "articles": [
+   "3",
+   "8",
+   "35"
+  ],
+  "outcome_raw": "Inadmissible",
+  "outcome": "inadmissible",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 4,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-114508",
+  "sha256": "8e9ce0cedca19c055d75158c2673a3dbb4da52eb21a849b211aa2867ecfb5c06",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:58Z",
+  "format": "html",
+  "path": "hudoc/001-114508.html"
+ },
+ {
+  "item_id": "001-115660",
+  "case_name": "ALI v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "18815/11"
+  ],
+  "ecli": "ECLI:CE:ECHR:2012:1204DEC001881511",
+  "doc_type": "decision",
+  "chamber": "Committee",
+  "date": "2012-12-04",
+  "articles": [
+   "3",
+   "8",
+   "39"
+  ],
+  "outcome_raw": "Struck out of the list",
+  "outcome": "struck_out",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 4,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-115660",
+  "sha256": "7e9b893af4af9ccd30f53cfad8807b45c01abaeec12f359e004d5e085f0fcc2c",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:30Z",
+  "format": "html",
+  "path": "hudoc/001-115660.html"
+ },
+ {
+  "item_id": "001-115714",
+  "case_name": "CHAGOS ISLANDERS v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "35622/04"
+  ],
+  "ecli": "ECLI:CE:ECHR:2012:1211DEC003562204",
+  "doc_type": "decision",
+  "chamber": "Chamber",
+  "date": "2012-12-11",
+  "articles": [
+   "1",
+   "6",
+   "34",
+   "35",
+   "35-3",
+   "56"
+  ],
+  "outcome_raw": "Inadmissible",
+  "outcome": "inadmissible",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 3,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-115714",
+  "sha256": "007b633ffd250f7544f5da3173827860f6bb2e8b1e523bab55d6e99b15e4c6cc",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:37Z",
+  "format": "html",
+  "path": "hudoc/001-115714.html"
+ },
+ {
+  "item_id": "001-122048",
+  "case_name": "K.A.S. v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "38844/12"
+  ],
+  "ecli": "ECLI:CE:ECHR:2013:0604DEC003884412",
+  "doc_type": "decision",
+  "chamber": "Chamber",
+  "date": "2013-06-04",
+  "articles": [
+   "37"
+  ],
+  "outcome_raw": "Struck out of the list",
+  "outcome": "struck_out",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 3,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-122048",
+  "sha256": "b8f1ca0b992adc1a0fb12c91fabe93f1726394901c7b77daa53414372c6fa619",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:27Z",
+  "format": "html",
+  "path": "hudoc/001-122048.html"
+ },
+ {
+  "item_id": "001-127061",
+  "case_name": "F.A. v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "20658/11"
+  ],
+  "ecli": "ECLI:CE:ECHR:2013:0910DEC002065811",
+  "doc_type": "decision",
+  "chamber": "Chamber",
+  "date": "2013-09-10",
+  "articles": [
+   "3",
+   "4",
+   "35"
+  ],
+  "outcome_raw": "Inadmissible",
+  "outcome": "inadmissible",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 4,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-127061",
+  "sha256": "2c5b8badfe6392877b2ec226f40f8c2a4ddb0df71b522e5d69df0e624e8d5434",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:57Z",
+  "format": "html",
+  "path": "hudoc/001-127061.html"
+ },
+ {
+  "item_id": "001-127160",
+  "case_name": "ISMAIL v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "48078/09"
+  ],
+  "ecli": "ECLI:CE:ECHR:2013:0917DEC004807809",
+  "doc_type": "decision",
+  "chamber": "Chamber",
+  "date": "2013-09-17",
+  "articles": [
+   "5",
+   "5-1-f",
+   "5-4",
+   "35",
+   "35-3"
+  ],
+  "outcome_raw": "Inadmissible",
+  "outcome": "inadmissible",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 3,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-127160",
+  "sha256": "cea30fc0c82da355378269f627cf13d7e20aeeba81f6bcf85cfbb376094770d2",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:55Z",
+  "format": "html",
+  "path": "hudoc/001-127160.html"
+ },
+ {
+  "item_id": "001-127188",
+  "case_name": "F.N. v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "3202/09"
+  ],
+  "ecli": "ECLI:CE:ECHR:2013:0917DEC000320209",
+  "doc_type": "decision",
+  "chamber": "Chamber",
+  "date": "2013-09-17",
+  "articles": [
+   "3",
+   "8",
+   "35"
+  ],
+  "outcome_raw": "Inadmissible",
+  "outcome": "inadmissible",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 4,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-127188",
+  "sha256": "5fcd150e470cd204f060d427e6b5679d25c55e487920b7ccbc8a1b155d943d66",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:56Z",
+  "format": "html",
+  "path": "hudoc/001-127188.html"
+ },
+ {
+  "item_id": "001-127560",
+  "case_name": "PINNOCK AND WALKER v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "31673/11"
+  ],
+  "ecli": "ECLI:CE:ECHR:2013:0924DEC003167311",
+  "doc_type": "decision",
+  "chamber": "Chamber",
+  "date": "2013-09-24",
+  "articles": [
+   "8",
+   "35"
+  ],
+  "outcome_raw": "Inadmissible",
+  "outcome": "inadmissible",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 4,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-127560",
+  "sha256": "902620cefbd7f0d7748170b81d068f6f0c02ed55f87dea1d6b097e0b93a5e251",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:38Z",
+  "format": "html",
+  "path": "hudoc/001-127560.html"
+ },
+ {
+  "item_id": "001-141330",
+  "case_name": "I.R. AND G.T. v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "14876/12",
+   "63339/12"
+  ],
+  "ecli": "ECLI:CE:ECHR:2014:0128DEC001487612",
+  "doc_type": "decision",
+  "chamber": "Chamber",
+  "date": "2014-01-28",
+  "articles": [
+   "8",
+   "13",
+   "13+8",
+   "35"
+  ],
+  "outcome_raw": "Inadmissible (Art. 35) Admissibility criteria",
+  "outcome": "inadmissible",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 3,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-141330",
+  "sha256": "efcb3d4a77fe3badc1df0f3d4cbd268a001205a893876651a8b103f8ac6ed02c",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:45Z",
+  "format": "html",
+  "path": "hudoc/001-141330.html"
+ },
+ {
+  "item_id": "001-142459",
+  "case_name": "IGNAOUA AND OTHERS v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "46706/08"
+  ],
+  "ecli": "ECLI:CE:ECHR:2014:0318DEC004670608",
+  "doc_type": "decision",
+  "chamber": "Chamber",
+  "date": "2014-03-18",
+  "articles": [
+   "3",
+   "13",
+   "35"
+  ],
+  "outcome_raw": "Inadmissible",
+  "outcome": "inadmissible",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 4,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-142459",
+  "sha256": "c2c91cd4e5da9bf404aae1141ee236031eb2cee14fe2beea99938a38fb54af10",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:51Z",
+  "format": "html",
+  "path": "hudoc/001-142459.html"
+ },
+ {
+  "item_id": "001-150856",
+  "case_name": "ASWAT v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "62176/14"
+  ],
+  "ecli": "ECLI:CE:ECHR:2015:0106DEC006217614",
+  "doc_type": "decision",
+  "chamber": "Chamber",
+  "date": "2015-01-06",
+  "articles": [
+   "3",
+   "35"
+  ],
+  "outcome_raw": "Inadmissible",
+  "outcome": "inadmissible",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 4,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-150856",
+  "sha256": "95ece683ea5496e0e6cae282a39a5b9a2e3983a8705b96abf9f146df4798328e",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:50Z",
+  "format": "html",
+  "path": "hudoc/001-150856.html"
+ },
+ {
+  "item_id": "001-161891",
+  "case_name": "LE LIEVRE AND OTHERS v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "36522/15"
+  ],
+  "ecli": "ECLI:CE:ECHR:2016:0301DEC003652215",
+  "doc_type": "decision",
+  "chamber": "Chamber",
+  "date": "2016-03-01",
+  "articles": [
+   "6",
+   "14",
+   "14+P1-3",
+   "35",
+   "P1-3"
+  ],
+  "outcome_raw": "Inadmissible",
+  "outcome": "inadmissible",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 4,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-161891",
+  "sha256": "d7f7a93271bd1ab50723879d32e1604b02647fc7dc2f8cf40b582132856d10a5",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:39Z",
+  "format": "html",
+  "path": "hudoc/001-161891.html"
+ },
+ {
+  "item_id": "001-161986",
+  "case_name": "I.A.A. AND OTHERS v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "25960/13"
+  ],
+  "ecli": "ECLI:CE:ECHR:2016:0308DEC002596013",
+  "doc_type": "decision",
+  "chamber": "Chamber",
+  "date": "2016-03-08",
+  "articles": [
+   "1",
+   "3",
+   "8",
+   "35"
+  ],
+  "outcome_raw": "Inadmissible",
+  "outcome": "inadmissible",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 4,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-161986",
+  "sha256": "39994a832d144e1a49d160e53227ad7908f3f0e14e928c0c0dc3fdcc0e33802d",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:49Z",
+  "format": "html",
+  "path": "hudoc/001-161986.html"
+ },
+ {
+  "item_id": "001-172143",
+  "case_name": "K2 v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "42387/13"
+  ],
+  "ecli": "ECLI:CE:ECHR:2017:0207DEC004238713",
+  "doc_type": "decision",
+  "chamber": "Chamber",
+  "date": "2017-02-07",
+  "articles": [
+   "8",
+   "8-1",
+   "14",
+   "35",
+   "35-3-a"
+  ],
+  "outcome_raw": "Inadmissible (Art. 35) Admissibility criteria;(Art. 35-3-a) Manifestly ill-founded",
+  "outcome": "inadmissible",
+  "inadmissibility_grounds": [
+   "manifestly_ill_founded"
+  ],
+  "inadmissibility_grounds_source": "metadata",
+  "importance": 3,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-172143",
+  "sha256": "18f6fba8343bfedbe8d025396181ef675d5c5f091dd86e3333f007340b8c3b20",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:46:16Z",
+  "format": "html",
+  "path": "hudoc/001-172143.html"
+ },
+ {
+  "item_id": "001-172305",
+  "case_name": "J.M.O. v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "54318/14"
+  ],
+  "ecli": "ECLI:CE:ECHR:2017:0221DEC005431814",
+  "doc_type": "decision",
+  "chamber": "Committee",
+  "date": "2017-02-21",
+  "articles": [
+   "5",
+   "5-1-f",
+   "35"
+  ],
+  "outcome_raw": "Inadmissible",
+  "outcome": "inadmissible",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 4,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-172305",
+  "sha256": "3b21135412db3569bfc4a9da0bb6f0b29d35187716cadd669b1da57e8e4d1939",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:47Z",
+  "format": "html",
+  "path": "hudoc/001-172305.html"
+ },
+ {
+  "item_id": "001-173881",
+  "case_name": "DRAGA v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "33341/13"
+  ],
+  "ecli": "ECLI:CE:ECHR:2017:0425DEC003334113",
+  "doc_type": "decision",
+  "chamber": "Committee",
+  "date": "2017-04-25",
+  "articles": [
+   "5",
+   "5-1-f",
+   "8",
+   "35"
+  ],
+  "outcome_raw": "Inadmissible",
+  "outcome": "inadmissible",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 4,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-173881",
+  "sha256": "0f02cc249617add75c3f2ee450530a022a1d5caf5e3e9f4d8c4f61e48f86c248",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:46Z",
+  "format": "html",
+  "path": "hudoc/001-173881.html"
+ },
+ {
+  "item_id": "001-182755",
+  "case_name": "KHAKSAR v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "2654/18"
+  ],
+  "ecli": "ECLI:CE:ECHR:2018:0403DEC000265418",
+  "doc_type": "decision",
+  "chamber": "Committee",
+  "date": "2018-04-03",
+  "articles": [
+   "3",
+   "8",
+   "35",
+   "35-1"
+  ],
+  "outcome_raw": "Inadmissible (Art. 35) Admissibility criteria;(Art. 35-1) Exhaustion of domestic remedies",
+  "outcome": "inadmissible",
+  "inadmissibility_grounds": [
+   "non_exhaustion"
+  ],
+  "inadmissibility_grounds_source": "metadata",
+  "importance": 3,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-182755",
+  "sha256": "d94bee475e1ee3450f3a4756d04da29f691e51d89db0a04e95a77265164257d7",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:44Z",
+  "format": "html",
+  "path": "hudoc/001-182755.html"
+ },
+ {
+  "item_id": "001-188457",
+  "case_name": "TIMES NEWSPAPERS LIMITED AND KENNEDY v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "64367/14"
+  ],
+  "ecli": "ECLI:CE:ECHR:2018:1113DEC006436714",
+  "doc_type": "decision",
+  "chamber": "Committee",
+  "date": "2018-11-13",
+  "articles": [
+   "10",
+   "10-1",
+   "10-2",
+   "35"
+  ],
+  "outcome_raw": "Inadmissible",
+  "outcome": "inadmissible",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 4,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-188457",
+  "sha256": "1bbf7874a0fe49a75a74a5f841f9fa404d590c971eedd3e46137345d8d2490e5",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:35Z",
+  "format": "html",
+  "path": "hudoc/001-188457.html"
+ },
+ {
+  "item_id": "001-220259",
+  "case_name": "M.T. v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "63230/19"
+  ],
+  "ecli": "ECLI:CE:ECHR:2022:0922DEC006323019",
+  "doc_type": "decision",
+  "chamber": "Committee",
+  "date": "2022-09-22",
+  "articles": [
+   "3",
+   "8",
+   "39"
+  ],
+  "outcome_raw": "Struck out of the list",
+  "outcome": "struck_out",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 4,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-220259",
+  "sha256": "a3a86bf803ca606d4d53df48a5036b91de2ef2ce2bcffdcab1e86b13dfa614d3",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:28Z",
+  "format": "html",
+  "path": "hudoc/001-220259.html"
+ },
+ {
+  "item_id": "001-223629",
+  "case_name": "OSAGIEDE v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "228/20"
+  ],
+  "ecli": "ECLI:CE:ECHR:2023:0207DEC000022820",
+  "doc_type": "decision",
+  "chamber": "Committee",
+  "date": "2023-02-07",
+  "articles": [
+   "8",
+   "35"
+  ],
+  "outcome_raw": "Inadmissible",
+  "outcome": "inadmissible",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 4,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-223629",
+  "sha256": "96ccf3eb15b291c4b15ca8f50f06fd674b4aae50b89900a2e265e5591ffa0e9e",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:44Z",
+  "format": "html",
+  "path": "hudoc/001-223629.html"
+ },
+ {
+  "item_id": "001-224490",
+  "case_name": "HAFEEZ v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "14198/20"
+  ],
+  "ecli": "ECLI:CE:ECHR:2023:0328DEC001419820",
+  "doc_type": "decision",
+  "chamber": "Chamber",
+  "date": "2023-03-28",
+  "articles": [
+   "3",
+   "6",
+   "35"
+  ],
+  "outcome_raw": "Inadmissible",
+  "outcome": "inadmissible",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 4,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-224490",
+  "sha256": "a86125891657bb6bd24e2d13c4878c54e3feff2c7378ba78460195d7b9ea03c8",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:41Z",
+  "format": "html",
+  "path": "hudoc/001-224490.html"
+ },
+ {
+  "item_id": "001-225312",
+  "case_name": "FIELD AND OTHERS v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "34442/18",
+   "34472/18",
+   "34478/18",
+   "34484/18",
+   "34596/18"
+  ],
+  "ecli": "ECLI:CE:ECHR:2023:0516DEC003444218",
+  "doc_type": "decision",
+  "chamber": "Chamber",
+  "date": "2023-05-16",
+  "articles": [
+   "14",
+   "14+P1-3",
+   "P1-3",
+   "35"
+  ],
+  "outcome_raw": "Inadmissible",
+  "outcome": "inadmissible",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 4,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-225312",
+  "sha256": "3bc84ae06cf816bbac997476e12bd89233b1a5fedc96e61a480742a64a42597f",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:36Z",
+  "format": "html",
+  "path": "hudoc/001-225312.html"
+ },
+ {
+  "item_id": "001-231646",
+  "case_name": "HORNE v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "34392/21"
+  ],
+  "ecli": "ECLI:CE:ECHR:2024:0213DEC003439221",
+  "doc_type": "decision",
+  "chamber": "Chamber",
+  "date": "2024-02-13",
+  "articles": [
+   "3",
+   "35"
+  ],
+  "outcome_raw": "Inadmissible",
+  "outcome": "inadmissible",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 4,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-231646",
+  "sha256": "168b47d493afc0c9db64ba6b0765f7af70c03e01cfdaebd86b419a1b38e1f773",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:40Z",
+  "format": "html",
+  "path": "hudoc/001-231646.html"
+ },
+ {
+  "item_id": "001-237927",
+  "case_name": "N.S.K. v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "28774/22"
+  ],
+  "ecli": "ECLI:CE:ECHR:2024:1003DEC002877422",
+  "doc_type": "decision",
+  "chamber": "Committee",
+  "date": "2024-10-03",
+  "articles": [
+   "3",
+   "37",
+   "37-1"
+  ],
+  "outcome_raw": "Struck out of the list",
+  "outcome": "struck_out",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 4,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-237927",
+  "sha256": "250551285cbee5c8ef5b1c6c196e1069fe4f925508e20228f4016e178c28c3f0",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:26Z",
+  "format": "html",
+  "path": "hudoc/001-237927.html"
+ },
+ {
+  "item_id": "001-57506",
+  "case_name": "IRELAND v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "5310/71"
+  ],
+  "ecli": "ECLI:CE:ECHR:1978:0118JUD000531071",
+  "doc_type": "judgment",
+  "chamber": "Chamber",
+  "date": "1978-01-18",
+  "articles": [
+   "33",
+   "3",
+   "5",
+   "5-1-c",
+   "5-2",
+   "5-3",
+   "5-4",
+   "5-1",
+   "15",
+   "15-1",
+   "15-3",
+   "14+5",
+   "14",
+   "6",
+   "6-1",
+   "1",
+   "41"
+  ],
+  "outcome_raw": "Violation of Art. 3;No violation of Art. 14+5;Just satisfaction not applied",
+  "outcome": "mixed",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 2,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-57506",
+  "sha256": "96a4ecd6b78721e46f109d897a4044f5d2e74bbee19a10f921fab8cea5b12b26",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:37Z",
+  "format": "html",
+  "path": "hudoc/001-57506.html"
+ },
+ {
+  "item_id": "001-57416",
+  "case_name": "ABDULAZIZ, CABALES AND BALKANDALI v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "9214/80",
+   "9473/81",
+   "9474/81"
+  ],
+  "ecli": "ECLI:CE:ECHR:1985:0528JUD000921480",
+  "doc_type": "judgment",
+  "chamber": "Chamber",
+  "date": "1985-05-28",
+  "articles": [
+   "8",
+   "8-1",
+   "14+8",
+   "14",
+   "3",
+   "13",
+   "41"
+  ],
+  "outcome_raw": "Violation of Art. 14+8;Violation of Art. 13;Non-pecuniary damage - finding of violation sufficient;Costs and expenses award - Convention proceedings",
+  "outcome": "violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 2,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-57416",
+  "sha256": "a842d64570b62de0640c42144c566329aafda384ed8f02a73de162ce3dc627b1",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:21Z",
+  "format": "html",
+  "path": "hudoc/001-57416.html"
+ },
+ {
+  "item_id": "001-57619",
+  "case_name": "SOERING v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "14038/88"
+  ],
+  "ecli": "ECLI:CE:ECHR:1989:0707JUD001403888",
+  "doc_type": "judgment",
+  "chamber": "Chamber",
+  "date": "1989-07-07",
+  "articles": [
+   "3",
+   "6",
+   "6-3-c",
+   "6-3-d",
+   "6-1",
+   "13",
+   "41",
+   "2",
+   "2-1"
+  ],
+  "outcome_raw": "Violation of Art. 3 (possible);No violation of Art. 6-3-c (possible);No violation of Art. 13;Non-pecuniary damage - finding of violation sufficient;Costs and expenses award - domestic proceedings;Costs and expenses award - Convention proceedings",
+  "outcome": "mixed",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 2,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-57619",
+  "sha256": "222ebd44c76f51621a4f2de21f7d28e8301e8f438716a0b2e0098448de1fb8f0",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:42:53Z",
+  "format": "html",
+  "path": "hudoc/001-57619.html"
+ },
+ {
+  "item_id": "001-57713",
+  "case_name": "VILVARAJAH AND OTHERS v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "13163/87",
+   "13164/87",
+   "13165/87",
+   "13447/87",
+   "13448/87"
+  ],
+  "ecli": "ECLI:CE:ECHR:1991:1030JUD001316387",
+  "doc_type": "judgment",
+  "chamber": "Chamber",
+  "date": "1991-10-30",
+  "articles": [
+   "3",
+   "13"
+  ],
+  "outcome_raw": "No violation of Art. 3;No violation of Art. 13",
+  "outcome": "no_violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 2,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-57713",
+  "sha256": "80bc63c11da08fd23646a0ebcce2887181253f5de3535fb6d897f9371efe4827",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:42:56Z",
+  "format": "html",
+  "path": "hudoc/001-57713.html"
+ },
+ {
+  "item_id": "001-57943",
+  "case_name": "McCANN AND OTHERS v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "18984/91"
+  ],
+  "ecli": "ECLI:CE:ECHR:1995:0927JUD001898491",
+  "doc_type": "judgment",
+  "chamber": "Grand Chamber",
+  "date": "1995-09-27",
+  "articles": [
+   "2",
+   "2-1",
+   "2-2",
+   "41"
+  ],
+  "outcome_raw": "Violation of Art. 2;Pecuniary damage - claim dismissed;Non-pecuniary damage - claim dismissed;Costs and expenses partial award - Convention proceedings",
+  "outcome": "violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 2,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-57943",
+  "sha256": "0689cd9ff9c789b1c151abf62966dae8a32bf4142bb627969071cd741565da4e",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:35Z",
+  "format": "html",
+  "path": "hudoc/001-57943.html"
+ },
+ {
+  "item_id": "001-58004",
+  "case_name": "CHAHAL v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "22414/93"
+  ],
+  "ecli": "ECLI:CE:ECHR:1996:1115JUD002241493",
+  "doc_type": "judgment",
+  "chamber": "Grand Chamber",
+  "date": "1996-11-15",
+  "articles": [
+   "3",
+   "5",
+   "5-1",
+   "5-1-f",
+   "5-4",
+   "8",
+   "13",
+   "28",
+   "28-1",
+   "46",
+   "46-2",
+   "38"
+  ],
+  "outcome_raw": "Violation of Art. 3;Violation of Art. 5-4;Violation of Art. 13;No violation of Art. 5-1;Not necessary to examine Art. 8;Non-pecuniary damage - finding of violation sufficient;Costs and expenses partial award - Convention proceedings",
+  "outcome": "mixed",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 2,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-58004",
+  "sha256": "be564dbf3b9ca821f7460319257956ca29c7e7db5713800d2b15e9a1e86ac941",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:42:55Z",
+  "format": "html",
+  "path": "hudoc/001-58004.html"
+ },
+ {
+  "item_id": "001-58035",
+  "case_name": "D. v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "30240/96"
+  ],
+  "ecli": "ECLI:CE:ECHR:1997:0502JUD003024096",
+  "doc_type": "judgment",
+  "chamber": "Chamber",
+  "date": "1997-05-02",
+  "articles": [
+   "2",
+   "2-1",
+   "3",
+   "8",
+   "13",
+   "41"
+  ],
+  "outcome_raw": "Violation of Art. 3;Not necessary to examine Art. 2;Not necessary to examine Art. 8;No violation of Art. 13;Costs and expenses partial award - Convention proceedings",
+  "outcome": "mixed",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 2,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-58035",
+  "sha256": "360ae1af794a4250ae1cd7735b3b1bf1f2d714e5702ccacffb1097e24be44323",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:42:59Z",
+  "format": "html",
+  "path": "hudoc/001-58035.html"
+ },
+ {
+  "item_id": "001-59206",
+  "case_name": "BENSAID v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "44599/98"
+  ],
+  "ecli": "ECLI:CE:ECHR:2001:0206JUD004459998",
+  "doc_type": "judgment",
+  "chamber": "Chamber",
+  "date": "2001-02-06",
+  "articles": [
+   "3",
+   "8",
+   "8-1",
+   "8-2",
+   "13"
+  ],
+  "outcome_raw": "No violation of Art. 3;No violation of Art. 8;No violation of Art. 13",
+  "outcome": "no_violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 1,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-59206",
+  "sha256": "8ed554048f74e96142e9c34788d56a8ed4abd7e6ca17d0c97f24e0771aa3bd84",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:00Z",
+  "format": "html",
+  "path": "hudoc/001-59206.html"
+ },
+ {
+  "item_id": "001-60448",
+  "case_name": "PRETTY v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "2346/02"
+  ],
+  "ecli": "ECLI:CE:ECHR:2002:0429JUD000234602",
+  "doc_type": "judgment",
+  "chamber": "Chamber",
+  "date": "2002-04-29",
+  "articles": [
+   "2",
+   "2-1",
+   "3",
+   "8",
+   "8-1",
+   "8-2",
+   "9",
+   "9-1",
+   "14",
+   "36",
+   "36-2",
+   "41"
+  ],
+  "outcome_raw": "No violation of Art. 2;No violation of Art. 3;No violation of Art. 8;No violation of Art. 9;No violation of Art. 14",
+  "outcome": "no_violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 1,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-60448",
+  "sha256": "8a17f2ad43b4d33d8492c1151c7e130755ec6e308d4cda2b6199a05a6d401962",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:33Z",
+  "format": "html",
+  "path": "hudoc/001-60448.html"
+ },
+ {
+  "item_id": "001-70442",
+  "case_name": "HIRST v. THE UNITED KINGDOM (No. 2)",
+  "application_numbers": [
+   "74025/01"
+  ],
+  "ecli": "ECLI:CE:ECHR:2005:1006JUD007402501",
+  "doc_type": "judgment",
+  "chamber": "Grand Chamber",
+  "date": "2005-10-06",
+  "articles": [
+   "10",
+   "10-1",
+   "14+P1-3",
+   "14",
+   "P1-3",
+   "41"
+  ],
+  "outcome_raw": "Violation of P1-3;No separate issue under Art. 14;No separate issue under Art. 10;Non-pecuniary damage - finding of violation sufficient;Costs and expenses (domestic proceedings) - claim dismissed;Costs and expenses partial award - Convention proceedings",
+  "outcome": "violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 1,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-70442",
+  "sha256": "b59c201b9ba3a644a2433182ca777392a62415b5263880a7cbc14b359dee4bc0",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:26Z",
+  "format": "html",
+  "path": "hudoc/001-70442.html"
+ },
+ {
+  "item_id": "001-84709",
+  "case_name": "SAADI v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "13229/03"
+  ],
+  "ecli": "ECLI:CE:ECHR:2008:0129JUD001322903",
+  "doc_type": "judgment",
+  "chamber": "Grand Chamber",
+  "date": "2008-01-29",
+  "articles": [
+   "5",
+   "5-1",
+   "5-2",
+   "5-1-f",
+   "41"
+  ],
+  "outcome_raw": "No violation of Art. 5-1;Violation of Art. 5-2;Non-pecuniary damage - finding of violation sufficient",
+  "outcome": "mixed",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 1,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-84709",
+  "sha256": "fc050a62439464cf09f495c4e8d3e9563751b5ee466d0a59a92ad9864357af5d",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:29Z",
+  "format": "html",
+  "path": "hudoc/001-84709.html"
+ },
+ {
+  "item_id": "001-85726",
+  "case_name": "NNYANZI v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "21878/06"
+  ],
+  "ecli": "ECLI:CE:ECHR:2008:0408JUD002187806",
+  "doc_type": "judgment",
+  "chamber": "Chamber",
+  "date": "2008-04-08",
+  "articles": [
+   "3",
+   "8",
+   "8-2",
+   "8-1",
+   "29",
+   "29-3",
+   "35",
+   "35-1"
+  ],
+  "outcome_raw": "No violation of Art. 3 (in case of removal to Uganda);No violation of Art. 8 (in case of removal to Uganda)",
+  "outcome": "no_violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 3,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-85726",
+  "sha256": "837b3d4a7aa7d84acf72098fea8dcaf98c067f8aa0122108a6e6120c511112b3",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:14Z",
+  "format": "html",
+  "path": "hudoc/001-85726.html"
+ },
+ {
+  "item_id": "001-86490",
+  "case_name": "N. v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "26565/05"
+  ],
+  "ecli": "ECLI:CE:ECHR:2008:0527JUD002656505",
+  "doc_type": "judgment",
+  "chamber": "Grand Chamber",
+  "date": "2008-05-27",
+  "articles": [
+   "3",
+   "29",
+   "29-3"
+  ],
+  "outcome_raw": "No violation of Art. 3  in the event of the applicant being removed to Uganda",
+  "outcome": "no_violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 1,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-86490",
+  "sha256": "ccd514c27a6d12c7cbe14b10823be4c43045f09e3ecdcdfde56c0947ab436bcc",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:42:59Z",
+  "format": "html",
+  "path": "hudoc/001-86490.html"
+ },
+ {
+  "item_id": "001-87458",
+  "case_name": "NA. v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "25904/07"
+  ],
+  "ecli": "ECLI:CE:ECHR:2008:0717JUD002590407",
+  "doc_type": "judgment",
+  "chamber": "Chamber",
+  "date": "2008-07-17",
+  "articles": [
+   "2",
+   "3",
+   "29",
+   "29-3",
+   "41"
+  ],
+  "outcome_raw": "Violation of Art. 3",
+  "outcome": "violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 2,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-87458",
+  "sha256": "e0f105f43394978ef8d6506dd8084ae78f005a2868c2d6758af9673f432ec8a5",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:01Z",
+  "format": "html",
+  "path": "hudoc/001-87458.html"
+ },
+ {
+  "item_id": "001-90051",
+  "case_name": "S. AND MARPER v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "30562/04",
+   "30566/04"
+  ],
+  "ecli": "ECLI:CE:ECHR:2008:1204JUD003056204",
+  "doc_type": "judgment",
+  "chamber": "Grand Chamber",
+  "date": "2008-12-04",
+  "articles": [
+   "8",
+   "8-1",
+   "8-2",
+   "41",
+   "46",
+   "46-2"
+  ],
+  "outcome_raw": "Violation of Article 8 - Right to respect for private and family life (Article 8-1 - Respect for private life);Non-pecuniary damage - finding of violation sufficient (Article 41 - Non-pecuniary damage;Just satisfaction)",
+  "outcome": "violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 1,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-90051",
+  "sha256": "2aedd94190d0f9fcabaee3e83902cbdacd6b519b3fc2067a09af9fa7398a8b5a",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:31Z",
+  "format": "html",
+  "path": "hudoc/001-90051.html"
+ },
+ {
+  "item_id": "001-90402",
+  "case_name": "JOSEPH GRANT v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "10606/07"
+  ],
+  "ecli": "ECLI:CE:ECHR:2009:0108JUD001060607",
+  "doc_type": "judgment",
+  "chamber": "Chamber",
+  "date": "2009-01-08",
+  "articles": [
+   "8",
+   "8-1",
+   "8-2"
+  ],
+  "outcome_raw": "No violation of Art. 8",
+  "outcome": "no_violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 3,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-90402",
+  "sha256": "f61a4dd2e8755f6d95fe8d5a435d3497b0ddf989b49e5139b8ca01203c0e95a9",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:49:42Z",
+  "format": "html",
+  "path": "hudoc/001-90402.html"
+ },
+ {
+  "item_id": "001-91286",
+  "case_name": "ONUR v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "27319/07"
+  ],
+  "ecli": "ECLI:CE:ECHR:2009:0217JUD002731907",
+  "doc_type": "judgment",
+  "chamber": "Chamber",
+  "date": "2009-02-17",
+  "articles": [
+   "8",
+   "8-1",
+   "8-2"
+  ],
+  "outcome_raw": "No violation of Art. 8",
+  "outcome": "no_violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 3,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-91286",
+  "sha256": "a3cca323e49e47de0a926e39707fa5ac17bf1a76e18fbc8fcd02bcf60130ba54",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:49:41Z",
+  "format": "html",
+  "path": "hudoc/001-91286.html"
+ },
+ {
+  "item_id": "001-91403",
+  "case_name": "A. AND OTHERS v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "3455/05"
+  ],
+  "ecli": "ECLI:CE:ECHR:2009:0219JUD000345505",
+  "doc_type": "judgment",
+  "chamber": "Grand Chamber",
+  "date": "2009-02-19",
+  "articles": [
+   "3",
+   "5",
+   "5-1",
+   "5-1-f",
+   "5-4",
+   "5-5",
+   "13",
+   "15",
+   "15-1",
+   "41",
+   "13+3"
+  ],
+  "outcome_raw": "No violation of Art. 3;No violation of Art. 13+3;Preliminary objection rejected (Government not precluded from raising defence under Art. 5-1-f or claiming that the derogation under Article 15 was invalid);No violation of Art. 5-1;Violation of Art. 5-1;Violation of Art. 5-4;No violation of Art. 5-4;Violation of Art. 5-5;Remainder inadmissible;Pecuniary and non-pecuniary damage - award",
+  "outcome": "mixed",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 1,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-91403",
+  "sha256": "92570fb3ef12682dc419c7b8ffeed0710387e48a6d02e466274a215c93504365",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:30Z",
+  "format": "html",
+  "path": "hudoc/001-91403.html"
+ },
+ {
+  "item_id": "001-95777",
+  "case_name": "OMOJUDI v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "1820/08"
+  ],
+  "ecli": "ECLI:CE:ECHR:2009:1124JUD000182008",
+  "doc_type": "judgment",
+  "chamber": "Chamber",
+  "date": "2009-11-24",
+  "articles": [
+   "8"
+  ],
+  "outcome_raw": "Violation of Article 8 - Right to respect for private and family life",
+  "outcome": "violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 4,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-95777",
+  "sha256": "286512a70a212404575934fb93f4463b318b82bd43f85ad3a69bba5a21ec2ca5",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:16Z",
+  "format": "html",
+  "path": "hudoc/001-95777.html"
+ },
+ {
+  "item_id": "001-96587",
+  "case_name": "KHAN A.W. v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "47486/06"
+  ],
+  "ecli": "ECLI:CE:ECHR:2010:0112JUD004748606",
+  "doc_type": "judgment",
+  "chamber": "Chamber",
+  "date": "2010-01-12",
+  "articles": [
+   "8",
+   "8-2",
+   "8-1"
+  ],
+  "outcome_raw": "Violation of Art. 8 (in case of deportation)",
+  "outcome": "violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 3,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-96587",
+  "sha256": "a0cf1927229bace2d73bb5840d0b5ed8610efa5d71074b7dbc4109f186e08c5d",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:19Z",
+  "format": "html",
+  "path": "hudoc/001-96587.html"
+ },
+ {
+  "item_id": "001-97575",
+  "case_name": "AL-SAADOON AND MUFDHI v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "61498/08"
+  ],
+  "ecli": "ECLI:CE:ECHR:2010:0302JUD006149808",
+  "doc_type": "judgment",
+  "chamber": "Chamber",
+  "date": "2010-03-02",
+  "articles": [
+   "3",
+   "6",
+   "6-1",
+   "13",
+   "34",
+   "41",
+   "46",
+   "46-2"
+  ],
+  "outcome_raw": "Violation of Art. 3 (substantive aspect);No violation of Art. 6;Violation of Art. 13;Violation of Art. 34;Non-pecuniary damage - finding of violation sufficient",
+  "outcome": "mixed",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 1,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-97575",
+  "sha256": "03ccdcd98f47ea3c39ab580c374b245c91cd3d9d3da047aa550c23496c8c383e",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:13Z",
+  "format": "html",
+  "path": "hudoc/001-97575.html"
+ },
+ {
+  "item_id": "001-99407",
+  "case_name": "S.H. v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "19956/06"
+  ],
+  "ecli": "ECLI:CE:ECHR:2010:0615JUD001995606",
+  "doc_type": "judgment",
+  "chamber": "Chamber",
+  "date": "2010-06-15",
+  "articles": [
+   "3"
+  ],
+  "outcome_raw": "Violation of Art. 3 (in case of expulsion)",
+  "outcome": "violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 4,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-99407",
+  "sha256": "96bbf22a01e3abb930d9ead085b9fcf41b0251019a15ee8fe2c33b9c284584f0",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:12Z",
+  "format": "html",
+  "path": "hudoc/001-99407.html"
+ },
+ {
+  "item_id": "001-105434",
+  "case_name": "SUFI AND ELMI v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "8319/07",
+   "11449/07"
+  ],
+  "ecli": "ECLI:CE:ECHR:2011:0628JUD000831907",
+  "doc_type": "judgment",
+  "chamber": "Chamber",
+  "date": "2011-06-28",
+  "articles": [
+   "3"
+  ],
+  "outcome_raw": "Violation of Art. 3 (in case of expulsion to Somalia)",
+  "outcome": "violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 2,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-105434",
+  "sha256": "80e7b7ba45ccf711495bc3334b696b1660bcdb3699f807d1dd482d01eae25617",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:02Z",
+  "format": "html",
+  "path": "hudoc/001-105434.html"
+ },
+ {
+  "item_id": "001-105606",
+  "case_name": "AL-SKEINI AND OTHERS v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "55721/07"
+  ],
+  "ecli": "ECLI:CE:ECHR:2011:0707JUD005572107",
+  "doc_type": "judgment",
+  "chamber": "Grand Chamber",
+  "date": "2011-07-07",
+  "articles": [
+   "1",
+   "2",
+   "2-1",
+   "34",
+   "41"
+  ],
+  "outcome_raw": "Preliminary objections dismissed (estoppel, non-exhaustion of domestic remedies);Preliminary objection joined to merits and dismissed (lack of jurisdiction);Preliminary objection joined to merits and partially dismissed (victim);Violation of Art. 2 (procedural aspect);Non-pecuniary damage - award",
+  "outcome": "violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 1,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-105606",
+  "sha256": "8f5377e2553324d0b819f369d6c99bebfb77eb72f4d2d483fd38c5f354adc9d5",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:29Z",
+  "format": "html",
+  "path": "hudoc/001-105606.html"
+ },
+ {
+  "item_id": "001-105612",
+  "case_name": "AL-JEDDA v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "27021/08"
+  ],
+  "ecli": "ECLI:CE:ECHR:2011:0707JUD002702108",
+  "doc_type": "judgment",
+  "chamber": "Grand Chamber",
+  "date": "2011-07-07",
+  "articles": [
+   "1",
+   "5",
+   "5-1",
+   "41"
+  ],
+  "outcome_raw": "Violation of Art. 5-1;Non-pecuniary damage - award",
+  "outcome": "violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 1,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-105612",
+  "sha256": "4afe7c7a73ca9ece6e378de6459c13dbda8db31601687af418749879c580da42",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:32Z",
+  "format": "html",
+  "path": "hudoc/001-105612.html"
+ },
+ {
+  "item_id": "001-106282",
+  "case_name": "A.A. v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "8000/08"
+  ],
+  "ecli": "ECLI:CE:ECHR:2011:0920JUD000800008",
+  "doc_type": "judgment",
+  "chamber": "Chamber",
+  "date": "2011-09-20",
+  "articles": [
+   "8",
+   "8-1",
+   "8-2"
+  ],
+  "outcome_raw": "Remainder inadmissible;Violation of Art. 8 (in case of expulsion to Nigeria)",
+  "outcome": "violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 3,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-106282",
+  "sha256": "19a406a3cf8fc653bf9ec7efd0793669b6a6d74b1a71d2cac05d1ea0ce89b53c",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:15Z",
+  "format": "html",
+  "path": "hudoc/001-106282.html"
+ },
+ {
+  "item_id": "001-108113",
+  "case_name": "A.H. KHAN v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "6222/10"
+  ],
+  "ecli": "ECLI:CE:ECHR:2011:1220JUD000622210",
+  "doc_type": "judgment",
+  "chamber": "Chamber",
+  "date": "2011-12-20",
+  "articles": [
+   "8",
+   "8-1",
+   "8-2",
+   "3"
+  ],
+  "outcome_raw": "No violation of Art. 8",
+  "outcome": "no_violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 3,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-108113",
+  "sha256": "f1872b8366b9286955b21feb3ff59b2fe2e207c3466cc8ff6acc1bf47827e52e",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:18Z",
+  "format": "html",
+  "path": "hudoc/001-108113.html"
+ },
+ {
+  "item_id": "001-108157",
+  "case_name": "J.H. v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "48839/09"
+  ],
+  "ecli": "ECLI:CE:ECHR:2011:1220JUD004883909",
+  "doc_type": "judgment",
+  "chamber": "Chamber",
+  "date": "2011-12-20",
+  "articles": [
+   "3"
+  ],
+  "outcome_raw": "No violation of Art. 3 (in case of expulsion to Afghanistan)",
+  "outcome": "no_violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 3,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-108157",
+  "sha256": "3caf31faebddef990c8b12561dcd64be6713cb6d401297bc3e2bc19443cd349e",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:11Z",
+  "format": "html",
+  "path": "hudoc/001-108157.html"
+ },
+ {
+  "item_id": "001-108599",
+  "case_name": "HARKINS AND EDWARDS v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "9146/07",
+   "32650/07"
+  ],
+  "ecli": "ECLI:CE:ECHR:2012:0117JUD000914607",
+  "doc_type": "judgment",
+  "chamber": "Chamber",
+  "date": "2012-01-17",
+  "articles": [
+   "2",
+   "2-1",
+   "3",
+   "5",
+   "5-1",
+   "5-4",
+   "35"
+  ],
+  "outcome_raw": "Remainder inadmissible;No violation of Article 3 - Prohibition of torture (Article 3 - Extradition) (Conditional) (United States of America);No violation of Article 3 - Prohibition of torture (Article 3 - Extradition) (Conditional) (United States of America)",
+  "outcome": "no_violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 3,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-108599",
+  "sha256": "544009c761cfb9c6218716c62a41973717de61bd518fe09ec96d484c699f5f49",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:07Z",
+  "format": "html",
+  "path": "hudoc/001-108599.html"
+ },
+ {
+  "item_id": "001-108629",
+  "case_name": "OTHMAN (ABU QATADA) v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "8139/09"
+  ],
+  "ecli": "ECLI:CE:ECHR:2012:0117JUD000813909",
+  "doc_type": "judgment",
+  "chamber": "Chamber",
+  "date": "2012-01-17",
+  "articles": [
+   "3",
+   "3+13",
+   "5",
+   "5-1",
+   "6",
+   "6-1",
+   "13"
+  ],
+  "outcome_raw": "No violation of Article 3 - Prohibition of torture (Article 3 - Expulsion) (Conditional) (Jordan);No violation of Article 3+13 - Prohibition of torture (Article 3 - Expulsion) (Article 13 - Effective remedy;Right to an effective remedy);No violation of Article 5 - Right to liberty and security (Article 5-1 - Deprivation of liberty) (Conditional) (Jordan);Violation of Article 6 - Right to a fair trial (Article 6 - Criminal proceedings;Expulsion;Article 6-1 - Access to court;Fair hearing) (Conditional) (Jordan)",
+  "outcome": "mixed",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 1,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-108629",
+  "sha256": "19c81806f4d384700c54f1c4d1d5d01652ddbf5adb9fb742c43e42ced4a92083",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:03Z",
+  "format": "html",
+  "path": "hudoc/001-108629.html"
+ },
+ {
+  "item_id": "001-110267",
+  "case_name": "BABAR AHMAD AND OTHERS v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "24027/07",
+   "11949/08",
+   "36742/08",
+   "66911/09",
+   "67354/09"
+  ],
+  "ecli": "ECLI:CE:ECHR:2012:0410JUD002402707",
+  "doc_type": "judgment",
+  "chamber": "Chamber",
+  "date": "2012-04-10",
+  "articles": [
+   "3",
+   "35"
+  ],
+  "outcome_raw": "Remainder inadmissible;No violation of Article 3 - Prohibition of torture (Article 3 - Degrading punishment;Degrading treatment;Inhuman punishment;Inhuman treatment;Extradition) (United States of America)",
+  "outcome": "no_violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 2,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-110267",
+  "sha256": "e1af263b80cdf8dc8367b99d92a6d749ecef82c720e2d3e06c3f16437efe964f",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:04Z",
+  "format": "html",
+  "path": "hudoc/001-110267.html"
+ },
+ {
+  "item_id": "001-110271",
+  "case_name": "BALOGUN v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "60286/09"
+  ],
+  "ecli": "ECLI:CE:ECHR:2012:0410JUD006028609",
+  "doc_type": "judgment",
+  "chamber": "Chamber",
+  "date": "2012-04-10",
+  "articles": [
+   "8"
+  ],
+  "outcome_raw": "No violation of Article 8 - Right to respect for private and family life (Article 8 - Expulsion) (Conditional) (Nigeria)",
+  "outcome": "no_violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 4,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-110271",
+  "sha256": "bfd102d09508ad6d55f5dfc66c545ea78b89327aef12635bc494db7294114051",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:20Z",
+  "format": "html",
+  "path": "hudoc/001-110271.html"
+ },
+ {
+  "item_id": "001-114244",
+  "case_name": "HODE AND ABDI v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "22341/09"
+  ],
+  "ecli": "ECLI:CE:ECHR:2012:1106JUD002234109",
+  "doc_type": "judgment",
+  "chamber": "Chamber",
+  "date": "2012-11-06",
+  "articles": [
+   "8",
+   "8-1",
+   "14",
+   "14+8",
+   "41"
+  ],
+  "outcome_raw": "Violation of Article 14+8 - Prohibition of discrimination (Article 14 - Discrimination) (Article 8-1 - Respect for family life;Respect for home;Article 8 - Right to respect for private and family life)",
+  "outcome": "violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 3,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-114244",
+  "sha256": "532da9a4cfe20bcfa99987f5ba1957d2134c072ea53c0bd0b1730004d8a57024",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:22Z",
+  "format": "html",
+  "path": "hudoc/001-114244.html"
+ },
+ {
+  "item_id": "001-116123",
+  "case_name": "S.H.H. v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "60367/10"
+  ],
+  "ecli": "ECLI:CE:ECHR:2013:0129JUD006036710",
+  "doc_type": "judgment",
+  "chamber": "Chamber",
+  "date": "2013-01-29",
+  "articles": [
+   "3"
+  ],
+  "outcome_raw": "No violation of Article 3 - Prohibition of torture (Article 3 - Expulsion) (Conditional) (Afghanistan)",
+  "outcome": "no_violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 3,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-116123",
+  "sha256": "937aeb4313729064d7c96d16998969813f5929cef3d67c66fadac5d8c2945ccd",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:06Z",
+  "format": "html",
+  "path": "hudoc/001-116123.html"
+ },
+ {
+  "item_id": "001-118583",
+  "case_name": "ASWAT v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "17299/12"
+  ],
+  "ecli": "ECLI:CE:ECHR:2013:0416JUD001729912",
+  "doc_type": "judgment",
+  "chamber": "Chamber",
+  "date": "2013-04-16",
+  "articles": [
+   "3"
+  ],
+  "outcome_raw": "Violation of Article 3 - Prohibition of torture (Article 3 - Extradition) (Conditional) (United States of America)",
+  "outcome": "violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 2,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-118583",
+  "sha256": "6c49caaf0128414c77c1c98b35171703cc584631b705b43f348f4ed346ed0850",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:05Z",
+  "format": "html",
+  "path": "hudoc/001-118583.html"
+ },
+ {
+  "item_id": "001-122664",
+  "case_name": "VINTER AND OTHERS v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "66069/09",
+   "130/10",
+   "3896/10"
+  ],
+  "ecli": "ECLI:CE:ECHR:2013:0709JUD006606909",
+  "doc_type": "judgment",
+  "chamber": "Grand Chamber",
+  "date": "2013-07-09",
+  "articles": [
+   "3",
+   "41"
+  ],
+  "outcome_raw": "Violation of Article 3 - Prohibition of torture (Article 3 - Degrading punishment;Inhuman punishment) (Substantive aspect);Non-pecuniary damage - finding of violation sufficient",
+  "outcome": "violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 1,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-122664",
+  "sha256": "128d0510406b024a26c99cf8712f62d4cae6f515d5ac8f56962f6e6c59fb46ad",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:34Z",
+  "format": "html",
+  "path": "hudoc/001-122664.html"
+ },
+ {
+  "item_id": "001-176931",
+  "case_name": "NDIDI v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "41215/14"
+  ],
+  "ecli": "ECLI:CE:ECHR:2017:0914JUD004121514",
+  "doc_type": "judgment",
+  "chamber": "Chamber",
+  "date": "2017-09-14",
+  "articles": [
+   "8"
+  ],
+  "outcome_raw": "No violation of Article 8 - Right to respect for private and family life (Article 8 - Expulsion) (Conditional) (Nigeria)",
+  "outcome": "no_violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 4,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-176931",
+  "sha256": "1cada3eb6ee327788f81895d4d594c2df497eca5cf3bd61442fa031834f63882",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:17Z",
+  "format": "html",
+  "path": "hudoc/001-176931.html"
+ },
+ {
+  "item_id": "001-205796",
+  "case_name": "UNUANE v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "80343/17"
+  ],
+  "ecli": "ECLI:CE:ECHR:2020:1124JUD008034317",
+  "doc_type": "judgment",
+  "chamber": "Chamber",
+  "date": "2020-11-24",
+  "articles": [
+   "35",
+   "35-3-a",
+   "8",
+   "8-1",
+   "8-2",
+   "41"
+  ],
+  "outcome_raw": "Remainder inadmissible (Art. 35) Admissibility criteria;(Art. 35-3-a) Manifestly ill-founded;Violation of Article 8 - Right to respect for private and family life (Article 8 - Expulsion;Article 8-1 - Respect for family life;Respect for private life);Non-pecuniary damage - award (Article 41 - Non-pecuniary damage;Just satisfaction)",
+  "outcome": "violation",
+  "inadmissibility_grounds": [
+   "manifestly_ill_founded"
+  ],
+  "inadmissibility_grounds_source": "metadata",
+  "importance": 3,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-205796",
+  "sha256": "b459385ec97fe748c75e0f5dd1d4942851cd8d43c9f6e945f0f3563a4fe941cc",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:49:40Z",
+  "format": "html",
+  "path": "hudoc/001-205796.html"
+ },
+ {
+  "item_id": "001-219755",
+  "case_name": "OTITE v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "18339/19"
+  ],
+  "ecli": "ECLI:CE:ECHR:2022:0927JUD001833919",
+  "doc_type": "judgment",
+  "chamber": "Chamber",
+  "date": "2022-09-27",
+  "articles": [
+   "8",
+   "8-1",
+   "8-2"
+  ],
+  "outcome_raw": "No violation of Article 8 - Right to respect for private and family life (Article 8 - Expulsion;Article 8-1 - Respect for family life;Respect for private life) (Conditional) (Nigeria)",
+  "outcome": "no_violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 3,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-219755",
+  "sha256": "7f6d607c1296d61ddd13e5fcf952c26d1fdf69c2f06960f36c51a944f1b8f33d",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:23Z",
+  "format": "html",
+  "path": "hudoc/001-219755.html"
+ },
+ {
+  "item_id": "001-229321",
+  "case_name": "H.A. v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "30919/20"
+  ],
+  "ecli": "ECLI:CE:ECHR:2023:1205JUD003091920",
+  "doc_type": "judgment",
+  "chamber": "Chamber",
+  "date": "2023-12-05",
+  "articles": [
+   "3"
+  ],
+  "outcome_raw": "No violation of Article 3 - Prohibition of torture (Article 3 - Expulsion) (Conditional) (Lebanon)",
+  "outcome": "no_violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 3,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-229321",
+  "sha256": "d360ba0a3c61ce6e0fb39b4b1a322ad980ac7fc4b763f8157e0fe7e9545faaa7",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:10Z",
+  "format": "html",
+  "path": "hudoc/001-229321.html"
+ },
+ {
+  "item_id": "001-243879",
+  "case_name": "HAYES AND OTHERS v. THE UNITED KINGDOM",
+  "application_numbers": [
+   "56532/22",
+   "56889/22",
+   "3739/23"
+  ],
+  "ecli": "ECLI:CE:ECHR:2025:0701JUD005653222",
+  "doc_type": "judgment",
+  "chamber": "Chamber",
+  "date": "2025-07-01",
+  "articles": [
+   "3"
+  ],
+  "outcome_raw": "No violation of Article 3 - Prohibition of torture (Article 3 - Extradition) (Conditional) (the United States of America)",
+  "outcome": "no_violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 3,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-243879",
+  "sha256": "c68b24c82177180d305f003ade5cb3fc75eca409fa0ce89ae6fd005317a814cf",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:43:09Z",
+  "format": "html",
+  "path": "hudoc/001-243879.html"
+ },
+ {
+  "item_id": "002-3706",
+  "case_name": "Hirst v. the United Kingdom (no. 2) [GC]",
+  "application_numbers": [
+   "74025/01"
+  ],
+  "ecli": null,
+  "doc_type": "legal_summary",
+  "chamber": null,
+  "date": "2005-10-06",
+  "articles": [
+   "10",
+   "10-1",
+   "14+P1-3",
+   "14",
+   "P1-3",
+   "41"
+  ],
+  "outcome_raw": "Violation of P1-3;No separate issue under Art. 14;No separate issue under Art. 10;Non-pecuniary damage - finding of violation sufficient;Costs and expenses (domestic proceedings) - claim dismissed;Costs and expenses partial award - Convention proceedings",
+  "outcome": "violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 1,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=002-3706",
+  "sha256": "bb0802925bc9dc6d6418bc04df2bcd289a939c7ca2124ba0ef762b55065a8b63",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:55Z",
+  "format": "html",
+  "path": "hudoc/002-3706.html"
+ },
+ {
+  "item_id": "002-2289",
+  "case_name": "Saadi v. the United Kingdom [GC]",
+  "application_numbers": [
+   "13229/03"
+  ],
+  "ecli": null,
+  "doc_type": "legal_summary",
+  "chamber": null,
+  "date": "2008-01-29",
+  "articles": [
+   "5",
+   "5-1",
+   "5-2",
+   "5-1-f",
+   "41"
+  ],
+  "outcome_raw": "No violation of Art. 5-1;Violation of Art. 5-2;Non-pecuniary damage - finding of violation sufficient",
+  "outcome": "mixed",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 1,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=002-2289",
+  "sha256": "171143aec6809e29058c51a050f0fb8d15c16b46f225dd464bcbc8104ce7f68a",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:54Z",
+  "format": "html",
+  "path": "hudoc/002-2289.html"
+ },
+ {
+  "item_id": "002-2189",
+  "case_name": "N. v. the United Kingdom [GC]",
+  "application_numbers": [
+   "26565/05"
+  ],
+  "ecli": null,
+  "doc_type": "legal_summary",
+  "chamber": null,
+  "date": "2008-05-27",
+  "articles": [
+   "3",
+   "29",
+   "29-3"
+  ],
+  "outcome_raw": "No violation of Art. 3  in the event of the applicant being removed to Uganda",
+  "outcome": "no_violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 1,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=002-2189",
+  "sha256": "e9555080835b44cfd2d61eb09998d78a4bec3c64e8dfdc3e007d3592c4d087f1",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:53Z",
+  "format": "html",
+  "path": "hudoc/002-2189.html"
+ },
+ {
+  "item_id": "002-1238",
+  "case_name": "Omojudi v. the United Kingdom",
+  "application_numbers": [
+   "1820/08"
+  ],
+  "ecli": null,
+  "doc_type": "legal_summary",
+  "chamber": null,
+  "date": "2009-11-24",
+  "articles": [
+   "8"
+  ],
+  "outcome_raw": "Violation of Article 8 - Right to respect for private and family life",
+  "outcome": "violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 4,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=002-1238",
+  "sha256": "34227ea050a03cdf814731aac5484f142716275bc72d207db9691a3bae632208",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:52Z",
+  "format": "html",
+  "path": "hudoc/002-1238.html"
+ },
+ {
+  "item_id": "002-460",
+  "case_name": "Sufi and Elmi v. the United Kingdom",
+  "application_numbers": [
+   "8319/07",
+   "11449/07"
+  ],
+  "ecli": null,
+  "doc_type": "legal_summary",
+  "chamber": null,
+  "date": "2011-06-28",
+  "articles": [
+   "3"
+  ],
+  "outcome_raw": "Violation of Art. 3 (in case of expulsion to Somalia)",
+  "outcome": "violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 2,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=002-460",
+  "sha256": "eaddfbe8e2191c6f107bad94fe49c0866e6de97a3c420d34a9b900d111a4635d",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:51Z",
+  "format": "html",
+  "path": "hudoc/002-460.html"
+ },
+ {
+  "item_id": "002-428",
+  "case_name": "Al-Skeini and Others v. the United Kingdom [GC]",
+  "application_numbers": [
+   "55721/07"
+  ],
+  "ecli": null,
+  "doc_type": "legal_summary",
+  "chamber": null,
+  "date": "2011-07-07",
+  "articles": [
+   "1",
+   "2",
+   "2-1",
+   "34",
+   "41"
+  ],
+  "outcome_raw": "Preliminary objections dismissed (estoppel, non-exhaustion of domestic remedies);Preliminary objection joined to merits and dismissed (lack of jurisdiction);Preliminary objection joined to merits and partially dismissed (victim);Violation of Art. 2 (procedural aspect);Non-pecuniary damage - award",
+  "outcome": "violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 1,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=002-428",
+  "sha256": "31e714aab99f9e223778f703eb5b2e19c92cb3c34def294faccfe4e3314da0ad",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:50Z",
+  "format": "html",
+  "path": "hudoc/002-428.html"
+ },
+ {
+  "item_id": "002-400",
+  "case_name": "A.A. v. the United Kingdom",
+  "application_numbers": [
+   "8000/08"
+  ],
+  "ecli": null,
+  "doc_type": "legal_summary",
+  "chamber": null,
+  "date": "2011-09-20",
+  "articles": [
+   "8",
+   "8-1",
+   "8-2"
+  ],
+  "outcome_raw": "Remainder inadmissible;Violation of Art. 8 (in case of expulsion to Nigeria)",
+  "outcome": "violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 3,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=002-400",
+  "sha256": "8f67443f535f53c7986f4ff1ed7ba82f4ae0efdbc6b427cb163fd6443684f789",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:49Z",
+  "format": "html",
+  "path": "hudoc/002-400.html"
+ },
+ {
+  "item_id": "002-44",
+  "case_name": "Othman (Abu Qatada) v. the United Kingdom",
+  "application_numbers": [
+   "8139/09"
+  ],
+  "ecli": null,
+  "doc_type": "legal_summary",
+  "chamber": null,
+  "date": "2012-01-17",
+  "articles": [
+   "3",
+   "5",
+   "5-1",
+   "6",
+   "6-1",
+   "13",
+   "3+13"
+  ],
+  "outcome_raw": "No violation of Article 3 - Prohibition of torture (Article 3 - Expulsion) (Conditional) (Jordan);No violation of Article 3+13 - Prohibition of torture (Article 3 - Expulsion) (Article 13 - Right to an effective remedy;Effective remedy);No violation of Article 5 - Right to liberty and security (Article 5-1 - Deprivation of liberty) (Conditional) (Jordan);Violation of Article 6 - Right to a fair trial (Article 6 - Criminal proceedings;Article 6-1 - Access to court) (Conditional) (Jordan)",
+  "outcome": "mixed",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 1,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=002-44",
+  "sha256": "591bc9863a425351cabd503e39b0463701dd1b2bb2ac5e8e958fec44ea3bd98f",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:46Z",
+  "format": "html",
+  "path": "hudoc/002-44.html"
+ },
+ {
+  "item_id": "002-74",
+  "case_name": "Harkins and Edwards v. the United Kingdom",
+  "application_numbers": [
+   "9146/07",
+   "32650/07"
+  ],
+  "ecli": null,
+  "doc_type": "legal_summary",
+  "chamber": null,
+  "date": "2012-01-17",
+  "articles": [
+   "2",
+   "2-1",
+   "3",
+   "5",
+   "5-1",
+   "5-4"
+  ],
+  "outcome_raw": "Remainder inadmissible;No violation of Article 3 - Prohibition of torture (Article 3 - Extradition) (Conditional) (United States of America);No violation of Article 3 - Prohibition of torture (Article 3 - Extradition) (Conditional) (United States of America)",
+  "outcome": "no_violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 3,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=002-74",
+  "sha256": "e991492c12022fbe718c4846433d0f70122f083b237dba12a58d2ee5be1fbe2a",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:47Z",
+  "format": "html",
+  "path": "hudoc/002-74.html"
+ },
+ {
+  "item_id": "002-2139",
+  "case_name": "Babar Ahmad and Others v. the United Kingdom",
+  "application_numbers": [
+   "24027/07",
+   "11949/08",
+   "36742/08",
+   "66911/09",
+   "67354/09"
+  ],
+  "ecli": null,
+  "doc_type": "legal_summary",
+  "chamber": null,
+  "date": "2012-04-10",
+  "articles": [
+   "3",
+   "35"
+  ],
+  "outcome_raw": "Remainder inadmissible;No violation of Article 3 - Prohibition of torture (Article 3 - Degrading punishment;Degrading treatment;Inhuman punishment;Inhuman treatment;Extradition) (United States of America)",
+  "outcome": "no_violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 2,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=002-2139",
+  "sha256": "63a95715f32a441bca6b99de1a2956edee3523eb80ce7d3b9b8242b484a7dbec",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:45Z",
+  "format": "html",
+  "path": "hudoc/002-2139.html"
+ },
+ {
+  "item_id": "002-7466",
+  "case_name": "Aswat v. the United Kingdom",
+  "application_numbers": [
+   "17299/12"
+  ],
+  "ecli": null,
+  "doc_type": "legal_summary",
+  "chamber": null,
+  "date": "2013-04-16",
+  "articles": [
+   "3"
+  ],
+  "outcome_raw": "Violation of Article 3 - Prohibition of torture (Article 3 - Extradition) (Conditional) (United States of America)",
+  "outcome": "violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 2,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=002-7466",
+  "sha256": "8cc6c2c362ed67cd4291b763631e1afb3ef59b977389020d740df8da4d67130d",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:44Z",
+  "format": "html",
+  "path": "hudoc/002-7466.html"
+ },
+ {
+  "item_id": "002-11569",
+  "case_name": "Harkins v. the United Kingdom (dec.) [GC]",
+  "application_numbers": [
+   "71537/14"
+  ],
+  "ecli": null,
+  "doc_type": "legal_summary",
+  "chamber": null,
+  "date": "2017-06-15",
+  "articles": [
+   "3",
+   "6",
+   "35",
+   "35-2-b",
+   "35-3-a"
+  ],
+  "outcome_raw": "Inadmissible (Art. 35) Admissibility criteria;(Art. 35-2) Matter already examined by the Court;(Art. 35-3-a) Manifestly ill-founded",
+  "outcome": "inadmissible",
+  "inadmissibility_grounds": [
+   "substantially_same",
+   "manifestly_ill_founded"
+  ],
+  "inadmissibility_grounds_source": "metadata",
+  "importance": 1,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=002-11569",
+  "sha256": "5165e1999a5cf977e0122ad3c594f19e82bf88223274c25d82c3e8d1e0526716",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:42Z",
+  "format": "html",
+  "path": "hudoc/002-11569.html"
+ },
+ {
+  "item_id": "002-11935",
+  "case_name": "Khaksar v. the United Kingdom (dec.)",
+  "application_numbers": [
+   "2654/18"
+  ],
+  "ecli": null,
+  "doc_type": "legal_summary",
+  "chamber": null,
+  "date": "2018-04-03",
+  "articles": [
+   "3",
+   "8",
+   "35",
+   "35-1"
+  ],
+  "outcome_raw": "Inadmissible (Art. 35) Admissibility criteria;(Art. 35-1) Exhaustion of domestic remedies",
+  "outcome": "inadmissible",
+  "inadmissibility_grounds": [
+   "non_exhaustion"
+  ],
+  "inadmissibility_grounds_source": "metadata",
+  "importance": 3,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=002-11935",
+  "sha256": "a7e3b75e502d7a97fe4a30307328333f72199c8afadc8b82f6dc8124a61d2acd",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:43Z",
+  "format": "html",
+  "path": "hudoc/002-11935.html"
+ },
+ {
+  "item_id": "002-13006",
+  "case_name": "Unuane v. the United Kingdom",
+  "application_numbers": [
+   "80343/17"
+  ],
+  "ecli": null,
+  "doc_type": "legal_summary",
+  "chamber": null,
+  "date": "2020-11-24",
+  "articles": [
+   "35",
+   "35-3-a",
+   "8",
+   "8-1",
+   "8-2",
+   "41"
+  ],
+  "outcome_raw": "Remainder inadmissible (Art. 35) Admissibility criteria;(Art. 35-3-a) Manifestly ill-founded;Violation of Article 8 - Right to respect for private and family life (Article 8 - Expulsion;Article 8-1 - Respect for family life;Respect for private life);Non-pecuniary damage - award (Article 41 - Non-pecuniary damage;Just satisfaction)",
+  "outcome": "violation",
+  "inadmissibility_grounds": [
+   "manifestly_ill_founded"
+  ],
+  "inadmissibility_grounds_source": "metadata",
+  "importance": 3,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=002-13006",
+  "sha256": "1e4785805073405962d04ebdc050d10b5e87f6dbd5644ed926c4369dd582a6a4",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:41Z",
+  "format": "html",
+  "path": "hudoc/002-13006.html"
+ },
+ {
+  "item_id": "002-14484",
+  "case_name": "Hayes v. the United Kingdom",
+  "application_numbers": [
+   "56532/22",
+   "56889/22",
+   "3739/23"
+  ],
+  "ecli": null,
+  "doc_type": "legal_summary",
+  "chamber": null,
+  "date": "2025-07-01",
+  "articles": [
+   "3"
+  ],
+  "outcome_raw": "No violation of Article 3 - Prohibition of torture (Article 3 - Extradition) (Conditional) (the United States of America)",
+  "outcome": "no_violation",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": 3,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=002-14484",
+  "sha256": "b8561590aba8e46247d5bc679537895da5eea82d4bab11bb397643958e75b342",
+  "data_source": "snapshot",
+  "retrieved_at": "2026-11-03T15:44:40Z",
+  "format": "html",
+  "path": "hudoc/002-14484.html"
+ },
+ {
+  "application_numbers": [],
+  "ecli": null,
+  "doc_type": "legislation",
+  "chamber": null,
+  "articles": [],
+  "outcome_raw": null,
+  "outcome": "not_applicable",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": null,
+  "language": "en",
+  "data_source": "snapshot",
+  "item_id": "echr-convention",
+  "case_name": "European Convention on Human Rights (as amended by Protocols 11, 14 and 15, with Protocols 1, 4, 6, 7, 12, 13, 16)",
+  "date": "1950-11-04",
+  "source_url": "https://www.echr.coe.int/documents/d/echr/convention_eng",
+  "sha256": "267e9d3685072b024042edff50a979a52fd2023a998528b0b755d55e61c76f87",
+  "retrieved_at": "2026-11-03T15:46:26Z",
+  "format": "txt",
+  "path": "legislation/echr-convention.txt"
+ },
+ {
+  "application_numbers": [],
+  "ecli": null,
+  "doc_type": "legislation",
+  "chamber": null,
+  "articles": [],
+  "outcome_raw": null,
+  "outcome": "not_applicable",
+  "inadmissibility_grounds": null,
+  "inadmissibility_grounds_source": null,
+  "importance": null,
+  "language": "en",
+  "data_source": "snapshot",
+  "item_id": "ukpga-1998-42",
+  "case_name": "Human Rights Act 1998",
+  "date": "1998-11-09",
+  "source_url": "https://www.legislation.gov.uk/ukpga/1998/42",
+  "sha256": "d878d53acd2dfd812e90860bed2804ba9a5f43bcbc51c7128de5cb4b0515f1bd",
+  "retrieved_at": "2026-11-03T15:46:26Z",
+  "format": "xml",
+  "path": "legislation/ukpga-1998-42.xml"
+ }
+]

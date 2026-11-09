@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$ref": "#/$defs/ApiError",
+  "$defs": {
+    "ApiError": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500,
+          "description": "short machine-friendly message, e.g. 'not_found'"
+        },
+        "detail": {
+          "anyOf": [
+            {
+              "type": "string",
+              "maxLength": 500
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "human-readable explanation"
+        },
+        "request_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "maxLength": 64
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "matches Answer.request_id / cost_log.request_id when known"
+        }
+      },
+      "required": [
+        "error",
+        "detail",
+        "request_id"
+      ],
+      "additionalProperties": false,
+      "description": "Error body returned by every endpoint on a non-2xx status"
+    }
+  }
+}

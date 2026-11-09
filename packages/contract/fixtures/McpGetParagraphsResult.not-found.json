@@ -1,0 +1,12 @@
+{
+  "paragraphs": [],
+  "not_found": [
+    "001-99999§1"
+  ],
+  "corpus": {
+    "documents": 98,
+    "data_source": "snapshot",
+    "scope": "UK cases only (plus the Convention and the Human Rights Act 1998)",
+    "sample_note": "Small committed sample, not the full HUDOC download."
+  }
+}

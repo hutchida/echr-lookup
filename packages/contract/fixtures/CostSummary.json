@@ -1,0 +1,82 @@
+{
+  "total_usd": 0.0,
+  "since": "2026-11-03T16:34:47Z",
+  "by_purpose": [
+    {
+      "purpose": "embed",
+      "calls": 4,
+      "tokens_in": 4433340,
+      "tokens_out": 0,
+      "tokens_cached": 0,
+      "cost_usd": 0.0
+    }
+  ],
+  "by_model": [
+    {
+      "model": "BAAI/bge-base-en-v1.5",
+      "calls": 1,
+      "tokens_in": 1070616,
+      "tokens_out": 0,
+      "tokens_cached": 0,
+      "cost_usd": 0.0
+    },
+    {
+      "model": "BAAI/bge-small-en-v1.5",
+      "calls": 3,
+      "tokens_in": 3362724,
+      "tokens_out": 0,
+      "tokens_cached": 0,
+      "cost_usd": 0.0
+    }
+  ],
+  "recent": [
+    {
+      "id": "cost-g0b-embed-004",
+      "timestamp": "2026-11-03T16:38:40Z",
+      "model": "BAAI/bge-base-en-v1.5",
+      "purpose": "embed",
+      "tokens_in": 1070616,
+      "tokens_out": 0,
+      "tokens_cached": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 127439.4,
+      "request_id": "bench-bge-base-recursive"
+    },
+    {
+      "id": "cost-g0b-embed-003",
+      "timestamp": "2026-11-03T16:36:33Z",
+      "model": "BAAI/bge-small-en-v1.5",
+      "purpose": "embed",
+      "tokens_in": 1070614,
+      "tokens_out": 0,
+      "tokens_cached": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 61138.1,
+      "request_id": "bench-bge-small-by_section"
+    },
+    {
+      "id": "cost-g0b-embed-002",
+      "timestamp": "2026-11-03T16:35:32Z",
+      "model": "BAAI/bge-small-en-v1.5",
+      "purpose": "embed",
+      "tokens_in": 1221494,
+      "tokens_out": 0,
+      "tokens_cached": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 45029.9,
+      "request_id": "bench-bge-small-fixed"
+    },
+    {
+      "id": "cost-g0b-embed-001",
+      "timestamp": "2026-11-03T16:34:47Z",
+      "model": "BAAI/bge-small-en-v1.5",
+      "purpose": "embed",
+      "tokens_in": 1070616,
+      "tokens_out": 0,
+      "tokens_cached": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 41334.0,
+      "request_id": "bench-bge-small-recursive"
+    }
+  ]
+}

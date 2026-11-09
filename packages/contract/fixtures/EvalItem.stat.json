@@ -1,0 +1,13 @@
+{
+  "id": "stat-001",
+  "question": "How many of the UK deportation or expulsion complaints in the snapshot were declared inadmissible?",
+  "type": "stat",
+  "expected_paragraph_ids": [],
+  "reference_notes": "Counted from decision metadata: see Answer.stats fixture for the SQL shape and the snapshot count.",
+  "status": "draft",
+  "tags": [
+    "count",
+    "inadmissible",
+    "deportation"
+  ]
+}

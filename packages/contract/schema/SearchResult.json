@@ -1,0 +1,288 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$ref": "#/$defs/SearchResult",
+  "$defs": {
+    "SearchResult": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string"
+        },
+        "mode": {
+          "type": "string",
+          "enum": [
+            "bm25",
+            "vector",
+            "hybrid",
+            "hybrid_rerank"
+          ]
+        },
+        "chunking": {
+          "type": "string",
+          "enum": [
+            "fixed",
+            "recursive",
+            "by_section"
+          ]
+        },
+        "k": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 50
+        },
+        "hits": {
+          "maxItems": 50,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "rank": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 9007199254740991,
+                "description": "final position in this result list"
+              },
+              "case_name": {
+                "type": "string"
+              },
+              "chunk": {
+                "$ref": "#/$defs/Chunk"
+              },
+              "paragraph_ids": {
+                "minItems": 1,
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "maxLength": 64,
+                  "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*§[A-Za-z0-9._-]+$"
+                },
+                "description": "paragraphs to cite for this hit: non-empty subset of chunk.paragraph_ids"
+              },
+              "scores": {
+                "type": "object",
+                "properties": {
+                  "bm25_score": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "bm25_rank": {
+                    "anyOf": [
+                      {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 9007199254740991
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "vector_score": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "vector_rank": {
+                    "anyOf": [
+                      {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 9007199254740991
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "rrf_score": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "rrf_rank": {
+                    "anyOf": [
+                      {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 9007199254740991
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "rerank_score": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "rerank_rank": {
+                    "anyOf": [
+                      {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 9007199254740991
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "bm25_score",
+                  "bm25_rank",
+                  "vector_score",
+                  "vector_rank",
+                  "rrf_score",
+                  "rrf_rank",
+                  "rerank_score",
+                  "rerank_rank"
+                ],
+                "additionalProperties": false,
+                "description": "per-method score and rank; null when that method did not run"
+              }
+            },
+            "required": [
+              "rank",
+              "case_name",
+              "chunk",
+              "paragraph_ids",
+              "scores"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "timings_ms": {
+          "type": "object",
+          "properties": {
+            "bm25": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "minimum": 0
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "vector": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "minimum": 0
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "fuse": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "minimum": 0
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "rerank": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "minimum": 0
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "total": {
+              "type": "number",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "bm25",
+            "vector",
+            "fuse",
+            "rerank",
+            "total"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "query",
+        "mode",
+        "chunking",
+        "k",
+        "hits",
+        "timings_ms"
+      ],
+      "additionalProperties": false,
+      "description": "POST /search response (at most 50 hits)"
+    },
+    "Chunk": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "<doc-id>:<strategy>:<index>, e.g. 001-57619:recursive:41"
+        },
+        "doc_id": {
+          "type": "string",
+          "maxLength": 40,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*$"
+        },
+        "strategy": {
+          "type": "string",
+          "enum": [
+            "fixed",
+            "recursive",
+            "by_section"
+          ]
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "paragraph_ids": {
+          "minItems": 1,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 64,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*§[A-Za-z0-9._-]+$"
+          },
+          "description": "paragraphs this chunk covers, in order"
+        },
+        "token_count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991,
+          "description": "tokens by the embedder's tokenizer"
+        }
+      },
+      "required": [
+        "id",
+        "doc_id",
+        "strategy",
+        "text",
+        "paragraph_ids",
+        "token_count"
+      ],
+      "additionalProperties": false,
+      "description": "A retrievable passage"
+    }
+  }
+}

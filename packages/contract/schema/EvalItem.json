@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$ref": "#/$defs/EvalItem",
+  "$defs": {
+    "EvalItem": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "question": {
+          "type": "string",
+          "minLength": 1
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "explain",
+            "stat",
+            "neutrality"
+          ]
+        },
+        "expected_paragraph_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 64,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*§[A-Za-z0-9._-]+$"
+          },
+          "description": "empty for stat and some neutrality items"
+        },
+        "reference_notes": {
+          "type": "string",
+          "description": "what a good answer says, in plain words"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "reviewed"
+          ]
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "question",
+        "type",
+        "expected_paragraph_ids",
+        "reference_notes",
+        "status",
+        "tags"
+      ],
+      "additionalProperties": false,
+      "description": "One evaluation question with its expected evidence"
+    }
+  }
+}

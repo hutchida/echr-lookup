@@ -1,0 +1,24 @@
+name: echr-lookup
+
+services:
+  db:
+    # ParadeDB = Postgres 17 + pg_search (real BM25) + pgvector in one image.
+    # See docs/decisions.md (D-001) for why.
+    image: paradedb/paradedb:0.26.4-pg17
+    environment:
+      POSTGRES_USER: echr
+      POSTGRES_PASSWORD: echr
+      POSTGRES_DB: echr
+    ports:
+      - "5433:5432"
+    volumes:
+      - echr-db:/var/lib/postgresql/data
+      - ./init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U echr -d echr"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+
+volumes:
+  echr-db:

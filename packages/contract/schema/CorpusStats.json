@@ -1,0 +1,826 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$ref": "#/$defs/CorpusStats",
+  "$defs": {
+    "CorpusStats": {
+      "type": "object",
+      "properties": {
+        "data_source": {
+          "type": "string",
+          "enum": [
+            "snapshot",
+            "full"
+          ]
+        },
+        "generated_at": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+        },
+        "totals": {
+          "type": "object",
+          "properties": {
+            "documents": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "paragraphs": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "chunks": {
+              "type": "object",
+              "properties": {
+                "fixed": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                },
+                "recursive": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                },
+                "by_section": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                }
+              },
+              "required": [
+                "fixed",
+                "recursive",
+                "by_section"
+              ],
+              "additionalProperties": false,
+              "description": "chunks built per strategy"
+            }
+          },
+          "required": [
+            "documents",
+            "paragraphs",
+            "chunks"
+          ],
+          "additionalProperties": false
+        },
+        "by_doc_type": {
+          "maxItems": 8,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "maxLength": 40
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "count": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              }
+            },
+            "required": [
+              "key",
+              "count"
+            ],
+            "additionalProperties": false
+          },
+          "description": "sums to totals.documents"
+        },
+        "by_outcome": {
+          "maxItems": 12,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "maxLength": 40
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "count": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              }
+            },
+            "required": [
+              "key",
+              "count"
+            ],
+            "additionalProperties": false
+          },
+          "description": "normalised outcome; sums to totals.documents"
+        },
+        "by_chamber": {
+          "maxItems": 4,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "maxLength": 40
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "count": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              }
+            },
+            "required": [
+              "key",
+              "count"
+            ],
+            "additionalProperties": false
+          },
+          "description": "key null = no chamber; sums to totals.documents"
+        },
+        "by_article": {
+          "maxItems": 25,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "maxLength": 40
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "count": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              }
+            },
+            "required": [
+              "key",
+              "count"
+            ],
+            "additionalProperties": false
+          },
+          "description": "top articles by number of documents, most frequent first; sub-paragraphs folded (8-1 counts as 8, 14+8 as 14)"
+        },
+        "by_year": {
+          "maxItems": 120,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "maxLength": 40
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "count": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              }
+            },
+            "required": [
+              "key",
+              "count"
+            ],
+            "additionalProperties": false
+          },
+          "description": "key = year of `date`, ascending; sums to totals.documents"
+        },
+        "last_ingest_run": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/IngestRun"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "costs": {
+          "$ref": "#/$defs/CostSummary"
+        },
+        "latest_eval": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/EvalRunSummary"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "data_source",
+        "generated_at",
+        "totals",
+        "by_doc_type",
+        "by_outcome",
+        "by_chamber",
+        "by_article",
+        "by_year",
+        "last_ingest_run",
+        "costs",
+        "latest_eval"
+      ],
+      "additionalProperties": false,
+      "description": "GET /stats response: what is in the corpus and how the system has been running"
+    },
+    "IngestRun": {
+      "type": "object",
+      "properties": {
+        "run_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64
+        },
+        "data_source": {
+          "type": "string",
+          "enum": [
+            "snapshot",
+            "full"
+          ]
+        },
+        "started_at": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+        },
+        "finished_at": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+        },
+        "stage_seconds": {
+          "type": "object",
+          "properties": {
+            "download": {
+              "type": "number",
+              "minimum": 0
+            },
+            "parse": {
+              "type": "number",
+              "minimum": 0
+            },
+            "chunk": {
+              "type": "number",
+              "minimum": 0
+            },
+            "embed": {
+              "type": "number",
+              "minimum": 0
+            },
+            "index": {
+              "type": "number",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "download",
+            "parse",
+            "chunk",
+            "embed",
+            "index"
+          ],
+          "additionalProperties": false
+        },
+        "counts": {
+          "type": "object",
+          "properties": {
+            "seen": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "new": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "changed": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "unchanged_skipped": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "failed": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            }
+          },
+          "required": [
+            "seen",
+            "new",
+            "changed",
+            "unchanged_skipped",
+            "failed"
+          ],
+          "additionalProperties": false
+        },
+        "embedder_model": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 60,
+          "description": "e.g. BAAI/bge-small-en-v1.5"
+        },
+        "embedding_dim": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991,
+          "description": "vector dimension of that model"
+        }
+      },
+      "required": [
+        "run_id",
+        "data_source",
+        "started_at",
+        "finished_at",
+        "stage_seconds",
+        "counts",
+        "embedder_model",
+        "embedding_dim"
+      ],
+      "additionalProperties": false,
+      "description": "Summary of one ingest pass (element of GET /ingest-runs)"
+    },
+    "CostSummary": {
+      "type": "object",
+      "properties": {
+        "total_usd": {
+          "type": "number",
+          "minimum": 0
+        },
+        "since": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time",
+              "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "timestamp of the earliest cost_log entry counted; null when there are none"
+        },
+        "by_purpose": {
+          "maxItems": 8,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "purpose": {
+                "type": "string",
+                "enum": [
+                  "embed",
+                  "generate",
+                  "verify",
+                  "route",
+                  "judge",
+                  "rerank"
+                ]
+              },
+              "calls": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "tokens_in": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "tokens_out": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "tokens_cached": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "cost_usd": {
+                "type": "number",
+                "minimum": 0
+              }
+            },
+            "required": [
+              "purpose",
+              "calls",
+              "tokens_in",
+              "tokens_out",
+              "tokens_cached",
+              "cost_usd"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "by_model": {
+          "maxItems": 20,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "model": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 60
+              },
+              "calls": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "tokens_in": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "tokens_out": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "tokens_cached": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "cost_usd": {
+                "type": "number",
+                "minimum": 0
+              }
+            },
+            "required": [
+              "model",
+              "calls",
+              "tokens_in",
+              "tokens_out",
+              "tokens_cached",
+              "cost_usd"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "recent": {
+          "maxItems": 100,
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/CostLogEntry"
+          },
+          "description": "most recent entries first"
+        }
+      },
+      "required": [
+        "total_usd",
+        "since",
+        "by_purpose",
+        "by_model",
+        "recent"
+      ],
+      "additionalProperties": false,
+      "description": "GET /costs response; also embedded in CorpusStats.costs"
+    },
+    "CostLogEntry": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64
+        },
+        "timestamp": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+        },
+        "model": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 60
+        },
+        "purpose": {
+          "type": "string",
+          "enum": [
+            "embed",
+            "generate",
+            "verify",
+            "route",
+            "judge",
+            "rerank"
+          ]
+        },
+        "tokens_in": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "tokens_out": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "tokens_cached": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "cost_usd": {
+          "type": "number",
+          "minimum": 0
+        },
+        "latency_ms": {
+          "type": "number",
+          "minimum": 0
+        },
+        "request_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64
+        }
+      },
+      "required": [
+        "id",
+        "timestamp",
+        "model",
+        "purpose",
+        "tokens_in",
+        "tokens_out",
+        "tokens_cached",
+        "cost_usd",
+        "latency_ms",
+        "request_id"
+      ],
+      "additionalProperties": false,
+      "description": "One model call, as stored in the cost_log table (element of GET /costs `recent`)"
+    },
+    "EvalRunSummary": {
+      "type": "object",
+      "properties": {
+        "run_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64
+        },
+        "started_at": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+        },
+        "finished_at": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+        },
+        "data_source": {
+          "type": "string",
+          "enum": [
+            "snapshot",
+            "full"
+          ]
+        },
+        "config": {
+          "type": "object",
+          "properties": {
+            "chunking": {
+              "type": "string",
+              "enum": [
+                "fixed",
+                "recursive",
+                "by_section"
+              ]
+            },
+            "mode": {
+              "type": "string",
+              "enum": [
+                "bm25",
+                "vector",
+                "hybrid",
+                "hybrid_rerank"
+              ]
+            },
+            "rerank": {
+              "type": "boolean"
+            },
+            "embedder_model": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 60
+            },
+            "generator_model": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "maxLength": 60
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "null for retrieval-only runs"
+            },
+            "judge_model": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "maxLength": 60
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "chunking",
+            "mode",
+            "rerank",
+            "embedder_model",
+            "generator_model",
+            "judge_model"
+          ],
+          "additionalProperties": false
+        },
+        "metrics": {
+          "type": "object",
+          "properties": {
+            "recall_at_5": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "recall_at_10": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "mrr": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "faithfulness": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "citation_accuracy": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "neutrality": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "recall_at_5",
+            "recall_at_10",
+            "mrr",
+            "faithfulness",
+            "citation_accuracy",
+            "neutrality"
+          ],
+          "additionalProperties": false
+        },
+        "cost_usd": {
+          "type": "number",
+          "minimum": 0
+        },
+        "tokens_in": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "tokens_out": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "timings_ms": {
+          "type": "object",
+          "properties": {
+            "total": {
+              "type": "number",
+              "minimum": 0
+            },
+            "mean_per_item": {
+              "type": "number",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "total",
+            "mean_per_item"
+          ],
+          "additionalProperties": false
+        },
+        "item_count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991,
+          "description": "number of items in the full EvalRun (its `items` are omitted here)"
+        }
+      },
+      "required": [
+        "run_id",
+        "started_at",
+        "finished_at",
+        "data_source",
+        "config",
+        "metrics",
+        "cost_usd",
+        "tokens_in",
+        "tokens_out",
+        "timings_ms",
+        "item_count"
+      ],
+      "additionalProperties": false,
+      "description": "EvalRun without per-item results (element of GET /eval-runs, and CorpusStats.latest_eval)"
+    }
+  }
+}

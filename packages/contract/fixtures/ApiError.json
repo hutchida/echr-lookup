@@ -1,0 +1,5 @@
+{
+  "error": "not_found",
+  "detail": "No document with item_id '001-99999' in the loaded corpus (GET /stats shows what is loaded).",
+  "request_id": "req-g0b-fixture-not-found"
+}

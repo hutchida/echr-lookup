@@ -1,0 +1,11 @@
+# Variant: image without models, models cached in a named volume (downloaded on first start).
+#   IMAGE_TARGET=runtime-slim docker compose -f infra/deploy/compose.yml -f infra/deploy/compose.slim.yml -p echr-deploy up -d --build
+services:
+  api:
+    image: echr-deploy-app:slim
+    volumes: ["hf-cache:/models"]
+  mcp:
+    image: echr-deploy-app:slim
+    volumes: ["hf-cache:/models"]
+volumes:
+  hf-cache:

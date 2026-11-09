@@ -1,0 +1,56 @@
+{
+  "paragraphs": [
+    {
+      "paragraph_id": "001-58004§78",
+      "para_label": "§78",
+      "doc_id": "001-58004",
+      "case_name": "Chahal v. the United Kingdom",
+      "doc_type": "judgment",
+      "doc_type_label": "Judgment",
+      "number": 78,
+      "section": "The Law",
+      "text": "The Commission, with whom the intervenors (see paragraph 6 above) agreed, rejected the Government's arguments. It referred to the Court's Vilvarajah and Others judgment (cited at paragraph 73 above, p. 36, para. 108) and expressed the opinion that the guarantees afforded by Article 3 (art. 3) were absolute in character, admitting of no exception.\nAt the hearing before the Court, the Commission's Delegate suggested that the passages in the Court's Soering judgment upon which the Government relied (see paragraph 76 above) might be taken as authority for the view that, in a case where there were serious doubts as to the likelihood of a person being subjected to treatment or punishment contrary to Article 3 (art. 3), the benefit of that doubt could be given to the deporting State whose national interests were threatened by his continued presence. However, the national interests of the State could not be invoked to override the interests of the individual where substantial grounds had been shown for believing that he would be subjected to ill-treatment if expelled.",
+      "truncated": false,
+      "requested": false,
+      "hudoc_url": "https://hudoc.echr.coe.int/eng?i=001-58004#:~:text=The%20Commission%2C%20with%20whom%20the%20intervenors%20(see%20paragraph",
+      "cite": "[Chahal v. the United Kingdom, Judgment, §78]"
+    },
+    {
+      "paragraph_id": "001-58004§79",
+      "para_label": "§79",
+      "doc_id": "001-58004",
+      "case_name": "Chahal v. the United Kingdom",
+      "doc_type": "judgment",
+      "doc_type_label": "Judgment",
+      "number": 79,
+      "section": "The Law",
+      "text": "Article 3 (art. 3) enshrines one of the most fundamental values of democratic society (see the above-mentioned Soering judgment, p. 34, para. 88). The Court is well aware of the immense difficulties faced by States in modern times in protecting their communities from terrorist violence. However, even in these circumstances, the Convention prohibits in absolute terms torture or inhuman or degrading treatment or punishment, irrespective of the victim's conduct. Unlike most of the substantive clauses of the Convention and of Protocols Nos. 1 and 4 (P1, P4), Article 3 (art. 3) makes no provision for exceptions and no derogation from it is permissible under Article 15 (art. 15) even in the event of a public emergency threatening the life of the nation (see the Ireland v. the United Kingdom judgment of 18 January 1978, Series A no. 25, p. 65, para. 163, and also the Tomasi v. France judgment of 27 August 1992, Series A no. 241-A, p. 42, para. 115).",
+      "truncated": false,
+      "requested": true,
+      "hudoc_url": "https://hudoc.echr.coe.int/eng?i=001-58004#:~:text=Article%203%20(art.%203)%20enshrines%20one%20of%20the",
+      "cite": "[Chahal v. the United Kingdom, Judgment, §79]"
+    },
+    {
+      "paragraph_id": "001-58004§80",
+      "para_label": "§80",
+      "doc_id": "001-58004",
+      "case_name": "Chahal v. the United Kingdom",
+      "doc_type": "judgment",
+      "doc_type_label": "Judgment",
+      "number": 80,
+      "section": "The Law",
+      "text": "The prohibition provided by Article 3 (art. 3) against ill-treatment is equally absolute in expulsion cases. Thus, whenever substantial grounds have been shown for believing that an individual would face a real risk of being subjected to treatment contrary to Article 3 (art. 3) if removed to another State, the responsibility of the Contracting State to safeguard him or her against such treatment is engaged in the event of expulsion (see the above-mentioned Vilvarajah and Others judgment, p. 34, para. 103). In these circumstances, the activities of the individual in question, however undesirable or dangerous, cannot be a material consideration. The protection afforded by Article 3 (art. 3) is thus wider than that provided by Articles 32 and 33 of the United Nations 1951 Convention on the Status of Refugees (see paragraph 61 above).",
+      "truncated": false,
+      "requested": false,
+      "hudoc_url": "https://hudoc.echr.coe.int/eng?i=001-58004#:~:text=The%20prohibition%20provided%20by%20Article%203%20(art.%203)",
+      "cite": "[Chahal v. the United Kingdom, Judgment, §80]"
+    }
+  ],
+  "not_found": [],
+  "corpus": {
+    "documents": 98,
+    "data_source": "snapshot",
+    "scope": "UK cases only (plus the Convention and the Human Rights Act 1998)",
+    "sample_note": "Small committed sample, not the full HUDOC download."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$ref": "#/$defs/McpGetCaseInput",
+  "$defs": {
+    "McpGetCaseInput": {
+      "type": "object",
+      "properties": {
+        "case_id": {
+          "type": "string",
+          "maxLength": 40,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*$",
+          "description": "document id, e.g. '001-58004' (the part of a paragraph_id before '§')"
+        }
+      },
+      "required": [
+        "case_id"
+      ],
+      "additionalProperties": false,
+      "description": "get_case arguments"
+    }
+  }
+}

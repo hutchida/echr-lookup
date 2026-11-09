@@ -1,0 +1,8 @@
+{
+  "baseUrl": "http://localhost:3100",
+  "steps": [
+    { "action": "goto", "url": "/" },
+    { "action": "waitFor", "selector": "[data-testid=api-status]:text-is('ok')" },
+    { "action": "screenshot", "name": "C1-home" }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "baseUrl": "http://localhost:3100",
+  "steps": [
+    { "action": "goto", "url": "/ask?q=Does%20the%20Convention%20stop%20the%20UK%20deporting%20criminals%3F" },
+    { "action": "waitFor", "selector": "[data-testid=citation]", "timeoutMs": 60000 },
+    { "action": "waitFor", "selector": "[data-testid=answer-cost]" },
+    { "action": "highlight", "selector": "[data-testid=answer-route]" },
+    { "action": "screenshot", "name": "I1-ask-q1", "fullPage": true }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "request_id": "req-g0b-fixture-refused",
+  "question": "What is the Court's view on a UK exit from the Convention?",
+  "route": "rag",
+  "answer_text": "The indexed sources do not address whether the United Kingdom should remain a party to the Convention, so I cannot answer that from them.",
+  "claims": [],
+  "citations": [],
+  "stats": null,
+  "refused_or_not_in_sources": true,
+  "steps": [
+    {
+      "step": "route",
+      "model": "claude-haiku-5-5",
+      "tokens_in": 410,
+      "tokens_out": 12,
+      "tokens_cached": 0,
+      "cost_usd": 4.7e-05,
+      "latency_ms": 310.0
+    },
+    {
+      "step": "retrieve",
+      "model": null,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "tokens_cached": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 22.2
+    }
+  ],
+  "total_cost_usd": 4.7e-05,
+  "total_latency_ms": 332.2,
+  "models_used": [
+    "claude-haiku-5-5"
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "doc_id": "001-58004",
+  "case_name": "Chahal v. the United Kingdom",
+  "doc_type": "judgment",
+  "doc_type_label": "Judgment",
+  "date": "1996-11-15",
+  "chamber": "Grand Chamber",
+  "application_numbers": [
+    "22414/93"
+  ],
+  "articles": [
+    "3",
+    "5",
+    "5-1",
+    "5-1-f",
+    "5-4",
+    "8",
+    "13",
+    "28",
+    "28-1",
+    "46",
+    "46-2",
+    "38"
+  ],
+  "importance": 2,
+  "outcome": "mixed",
+  "outcome_label": "Mixed: at least one violation and at least one no-violation finding",
+  "outcome_raw": "Violation of Art. 3;Violation of Art. 5-4;Violation of Art. 13;No violation of Art. 5-1;Not necessary to examine Art. 8;Non-pecuniary damage - finding of violation sufficient;Costs and expenses partial award - Convention proceedings",
+  "inadmissibility_grounds": null,
+  "hudoc_url": "https://hudoc.echr.coe.int/eng?i=001-58004",
+  "paragraph_count": 298,
+  "operative_provisions": [
+    {
+      "paragraph_id": "001-58004§op1",
+      "para_label": "Operative provisions, para 1",
+      "text": "Holds by twelve votes to seven that, in the event of the Secretary of State's decision to deport the first applicant to India being implemented, there would be a violation of Article 3 of the Convention (art. 3);",
+      "cite": "[Chahal v. the United Kingdom, Judgment, Operative provisions, para 1]"
+    },
+    {
+      "paragraph_id": "001-58004§op2",
+      "para_label": "Operative provisions, para 2",
+      "text": "Holds by thirteen votes to six that there has been no violation of Article 5 para. 1 of the Convention (art. 5-1);",
+      "cite": "[Chahal v. the United Kingdom, Judgment, Operative provisions, para 2]"
+    },
+    {
+      "paragraph_id": "001-58004§op3",
+      "para_label": "Operative provisions, para 3",
+      "text": "Holds unanimously that there has been a violation of Article 5 para. 4 of the Convention (art. 5-4);",
+      "cite": "[Chahal v. the United Kingdom, Judgment, Operative provisions, para 3]"
+    },
+    {
+      "paragraph_id": "001-58004§op4",
+      "para_label": "Operative provisions, para 4",
+      "text": "Holds by seventeen votes to two that, having regard to its conclusion with regard to Article 3 (art. 3), it is not necessary to consider the applicants' complaint under Article 8 of the Convention (art. 8);",
+      "cite": "[Chahal v. the United Kingdom, Judgment, Operative provisions, para 4]"
+    },
+    {
+      "paragraph_id": "001-58004§op5",
+      "para_label": "Operative provisions, para 5",
+      "text": "Holds unanimously that there has been a violation of Article 13 in conjunction with Article 3 of the Convention (art. 13+3);",
+      "cite": "[Chahal v. the United Kingdom, Judgment, Operative provisions, para 5]"
+    },
+    {
+      "paragraph_id": "001-58004§op6",
+      "para_label": "Operative provisions, para 6",
+      "text": "Holds unanimously that the above findings of violation constitute sufficient just satisfaction as regards the claim for compensation for non-pecuniary damage;",
+      "cite": "[Chahal v. the United Kingdom, Judgment, Operative provisions, para 6]"
+    },
+    {
+      "paragraph_id": "001-58004§op7",
+      "para_label": "Operative provisions, para 7",
+      "text": "Holds unanimously (a) that the respondent State is to pay the applicants, within three months, in respect of costs and expenses, £45,000 (forty-five thousand pounds sterling) less 21,141 (twenty-one thousand, one hundred and forty-one) French francs to be converted into pounds sterling at the rate applicable on the date of delivery of the present judgment; (b) that simple interest at an annual rate of 8% shall be payable from the expiry of the above-mentioned three months until settlement;",
+      "cite": "[Chahal v. the United Kingdom, Judgment, Operative provisions, para 7]"
+    },
+    {
+      "paragraph_id": "001-58004§op8",
+      "para_label": "Operative provisions, para 8",
+      "text": "Dismisses unanimously the remainder of the claim for just satisfaction.",
+      "cite": "[Chahal v. the United Kingdom, Judgment, Operative provisions, para 8]"
+    }
+  ],
+  "outline": [
+    {
+      "section": "Procedure",
+      "first_paragraph_id": "001-58004§1",
+      "last_paragraph_id": "001-58004§11",
+      "paragraph_count": 12
+    },
+    {
+      "section": "The Facts",
+      "first_paragraph_id": "001-58004§12",
+      "last_paragraph_id": "001-58004§71",
+      "paragraph_count": 62
+    },
+    {
+      "section": "The Law",
+      "first_paragraph_id": "001-58004§72",
+      "last_paragraph_id": "001-58004§161",
+      "paragraph_count": 90
+    },
+    {
+      "section": "Operative provisions",
+      "first_paragraph_id": "001-58004§op1",
+      "last_paragraph_id": "001-58004§op8",
+      "paragraph_count": 8
+    },
+    {
+      "section": "Other",
+      "first_paragraph_id": "001-58004§u4",
+      "last_paragraph_id": "001-58004§u129",
+      "paragraph_count": 126
+    }
+  ],
+  "corpus": {
+    "documents": 98,
+    "data_source": "snapshot",
+    "scope": "UK cases only (plus the Convention and the Human Rights Act 1998)",
+    "sample_note": "Small committed sample, not the full HUDOC download."
+  }
+}

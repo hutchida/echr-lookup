@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$ref": "#/$defs/IngestRun",
+  "$defs": {
+    "IngestRun": {
+      "type": "object",
+      "properties": {
+        "run_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64
+        },
+        "data_source": {
+          "type": "string",
+          "enum": [
+            "snapshot",
+            "full"
+          ]
+        },
+        "started_at": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+        },
+        "finished_at": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+        },
+        "stage_seconds": {
+          "type": "object",
+          "properties": {
+            "download": {
+              "type": "number",
+              "minimum": 0
+            },
+            "parse": {
+              "type": "number",
+              "minimum": 0
+            },
+            "chunk": {
+              "type": "number",
+              "minimum": 0
+            },
+            "embed": {
+              "type": "number",
+              "minimum": 0
+            },
+            "index": {
+              "type": "number",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "download",
+            "parse",
+            "chunk",
+            "embed",
+            "index"
+          ],
+          "additionalProperties": false
+        },
+        "counts": {
+          "type": "object",
+          "properties": {
+            "seen": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "new": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "changed": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "unchanged_skipped": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "failed": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            }
+          },
+          "required": [
+            "seen",
+            "new",
+            "changed",
+            "unchanged_skipped",
+            "failed"
+          ],
+          "additionalProperties": false
+        },
+        "embedder_model": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 60,
+          "description": "e.g. BAAI/bge-small-en-v1.5"
+        },
+        "embedding_dim": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991,
+          "description": "vector dimension of that model"
+        }
+      },
+      "required": [
+        "run_id",
+        "data_source",
+        "started_at",
+        "finished_at",
+        "stage_seconds",
+        "counts",
+        "embedder_model",
+        "embedding_dim"
+      ],
+      "additionalProperties": false,
+      "description": "Summary of one ingest pass (element of GET /ingest-runs)"
+    }
+  }
+}

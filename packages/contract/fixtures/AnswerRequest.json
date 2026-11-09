@@ -1,0 +1,9 @@
+{
+  "question": "Can the UK extradite a person who faces the death row phenomenon?",
+  "options": {
+    "chunking": "recursive",
+    "mode": "hybrid",
+    "k": 8,
+    "route": "auto"
+  }
+}

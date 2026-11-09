@@ -1,0 +1,201 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$ref": "#/$defs/McpSearchCaseLawResult",
+  "$defs": {
+    "McpSearchCaseLawResult": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "filters": {
+          "type": "string",
+          "maxLength": 300,
+          "description": "the filters applied, in plain words; '' when none"
+        },
+        "hits": {
+          "maxItems": 10,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "rank": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 9007199254740991
+              },
+              "paragraph_id": {
+                "type": "string",
+                "maxLength": 64,
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*§[A-Za-z0-9._-]+$",
+                "description": "the paragraph to cite, '<doc_id>§<ref>'"
+              },
+              "para_label": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 50,
+                "description": "readable name of the paragraph, for display and citing: '§79' for a numbered paragraph; 'Law, para 2' for an unnumbered one (n counts within that section of the document, in order); 'Article 8' for legislation. The stable id is paragraph_id"
+              },
+              "doc_id": {
+                "type": "string",
+                "maxLength": 40,
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*$"
+              },
+              "case_name": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200,
+                "description": "display name, e.g. 'Chahal v. the United Kingdom' (HUDOC's upper-case names are title-cased)"
+              },
+              "doc_type": {
+                "type": "string",
+                "enum": [
+                  "judgment",
+                  "decision",
+                  "communicated",
+                  "legal_summary",
+                  "legislation"
+                ]
+              },
+              "doc_type_label": {
+                "type": "string",
+                "enum": [
+                  "Judgment",
+                  "Decision",
+                  "Communicated case",
+                  "Legal summary",
+                  "Legislation"
+                ],
+                "description": "plain label for doc_type; a Legal summary is the Court's digest, not the judgment itself"
+              },
+              "date": {
+                "type": "string",
+                "format": "date",
+                "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))$"
+              },
+              "outcome": {
+                "type": "string",
+                "enum": [
+                  "violation",
+                  "no_violation",
+                  "mixed",
+                  "inadmissible",
+                  "partly_inadmissible",
+                  "struck_out",
+                  "admissible",
+                  "other",
+                  "not_applicable"
+                ]
+              },
+              "articles": {
+                "maxItems": 60,
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "maxLength": 20
+                }
+              },
+              "section": {
+                "type": "string",
+                "enum": [
+                  "Procedure",
+                  "The Facts",
+                  "The Law",
+                  "Operative provisions",
+                  "Other"
+                ]
+              },
+              "quote": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 600,
+                "description": "verbatim text of the paragraph that contains the best-matching sentence, starting and ending at sentence boundaries; a leading or trailing '…' marks a cut. Quote only from here (or get_paragraphs), and check anything else with check_quote. hudoc_url's text fragment is this quote's first words"
+              },
+              "hudoc_url": {
+                "type": "string",
+                "maxLength": 400,
+                "format": "uri",
+                "description": "the document's public page (HUDOC; legislation: its official source). Where the result has a quote or text, it ends '#:~:text=<its first 6-8 words, percent-encoded>': a browser that supports text fragments opens the page and highlights those words. A case-level link with no quote has no fragment"
+              },
+              "cite": {
+                "type": "string",
+                "maxLength": 200,
+                "description": "ready-to-paste citation '[<case name>, <doc type label>, <para_label>]', e.g. '[Chahal v. the United Kingdom, Judgment, §79]' or '[Harkins and Edwards v. the United Kingdom, Legal summary, Law, para 2]'. Copy it verbatim after the claim it supports; when two paragraphs of one result would share a string, the doc id is added to the doc type, e.g. 'Judgment (001-58004)'"
+              }
+            },
+            "required": [
+              "rank",
+              "paragraph_id",
+              "para_label",
+              "doc_id",
+              "case_name",
+              "doc_type",
+              "doc_type_label",
+              "date",
+              "outcome",
+              "articles",
+              "section",
+              "quote",
+              "hudoc_url",
+              "cite"
+            ],
+            "additionalProperties": false
+          },
+          "description": "best first; one paragraph per hit, no duplicates; empty when nothing matched"
+        },
+        "corpus": {
+          "type": "object",
+          "properties": {
+            "documents": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991,
+              "description": "documents loaded for this data_source"
+            },
+            "data_source": {
+              "type": "string",
+              "enum": [
+                "snapshot",
+                "full"
+              ]
+            },
+            "scope": {
+              "type": "string",
+              "maxLength": 200,
+              "description": "e.g. 'UK cases only (plus the Convention and the Human Rights Act 1998)'"
+            },
+            "sample_note": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "maxLength": 300
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "snapshot mode: 'Small committed sample, not the full HUDOC download.'; full mode: null"
+            }
+          },
+          "required": [
+            "documents",
+            "data_source",
+            "scope",
+            "sample_note"
+          ],
+          "additionalProperties": false,
+          "description": "what the corpus covers: 'not found here' does not mean the Court never decided it"
+        }
+      },
+      "required": [
+        "query",
+        "filters",
+        "hits",
+        "corpus"
+      ],
+      "additionalProperties": false,
+      "description": "search_case_law result: hybrid BM25 + vector search, reranked"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+[project]
+name = "echr-lookup-py"
+version = "0.0.0"
+description = "RAG pipeline (ingest, parse, index, search, answer, eval) and FastAPI service for echr-lookup."
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "anthropic>=0.80",
+    "beautifulsoup4>=4.13,<5",
+    "fastapi>=0.162,<0.163",
+    "httpx>=0.28,<1",
+    "lxml>=5.3",
+    "mcp>=2.3,<3",
+    "numpy>=2.1",
+    "psycopg[binary]>=3.3,<3.4",
+    "pydantic>=2.14,<3",
+    "python-docx>=1.1,<2",
+    "python-dotenv>=1.1,<2",
+    "tenacity>=9,<10",
+    "uvicorn[standard]>=0.54,<0.55",
+]
+
+[tool.uv]
+required-version = ">=0.9.0,<0.10"
+package = false
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+
+[tool.pytest.ini_options]
+testpaths = ["api", "echr_mcp", "rag", "tests"]
+pythonpath = ["."]
+addopts = "-ra"
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu", marker = "sys_platform == 'linux'" }]
+
+[dependency-groups]
+ml = [
+    "sentence-transformers>=3.3",
+    "torch>=2.5",
+]
+dev = [
+    "httpx2>=2.16.0",
+    "jsonschema>=4.26,<5",
+    "pytest>=9.2,<10",
+    "ruff==0.17.3",
+]

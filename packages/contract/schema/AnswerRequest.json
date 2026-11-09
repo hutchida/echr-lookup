@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$ref": "#/$defs/AnswerRequest",
+  "$defs": {
+    "AnswerRequest": {
+      "type": "object",
+      "properties": {
+        "question": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        "options": {
+          "type": "object",
+          "properties": {
+            "chunking": {
+              "type": "string",
+              "enum": [
+                "fixed",
+                "recursive",
+                "by_section"
+              ]
+            },
+            "mode": {
+              "type": "string",
+              "enum": [
+                "bm25",
+                "vector",
+                "hybrid",
+                "hybrid_rerank"
+              ]
+            },
+            "k": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 50
+            },
+            "route": {
+              "description": "auto = let the router decide",
+              "type": "string",
+              "enum": [
+                "auto",
+                "rag",
+                "stats"
+              ]
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "question"
+      ],
+      "additionalProperties": false,
+      "description": "POST /ask body"
+    }
+  }
+}

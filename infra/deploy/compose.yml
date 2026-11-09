@@ -1,0 +1,62 @@
+# Deployment rehearsal: ParadeDB + the API + the MCP server, on ports that cannot clash with
+# the dev stack (infra/docker-compose.yml: 5433 / 8000 / 8100).
+#   docker compose -f infra/deploy/compose.yml -p echr-deploy up -d --build
+#   infra/deploy/load-snapshot.sh
+name: echr-deploy
+
+x-app: &app
+  image: echr-deploy-app:latest
+  build:
+    context: ../..
+    dockerfile: infra/deploy/Dockerfile
+    target: ${IMAGE_TARGET:-runtime-baked}
+  environment: &app-env
+    DATABASE_URL: postgresql://echr:echr@db:5432/echr
+    DATA_SOURCE: snapshot
+    LLM_MODE: fake # no Anthropic key in this stack: /ask is not exercised here
+  depends_on:
+    db:
+      condition: service_healthy
+
+services:
+  db:
+    # Same image as infra/docker-compose.yml: Postgres 17 + pg_search (BM25) + pgvector.
+    image: paradedb/paradedb:0.26.4-pg17
+    environment:
+      POSTGRES_USER: echr
+      POSTGRES_PASSWORD: echr
+      POSTGRES_DB: echr
+    ports:
+      - "5434:5432"
+    volumes:
+      - deploy-db:/var/lib/postgresql/data
+      - ../init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U echr -d echr"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+
+  api:
+    <<: *app
+    command: ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+    ports:
+      - "8003:8000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request as u; u.urlopen('http://127.0.0.1:8000/health', timeout=3)"]
+      interval: 2s
+      timeout: 4s
+      retries: 90
+
+  mcp:
+    <<: *app
+    environment:
+      <<: *app-env
+      MCP_HOST: 0.0.0.0 # inside the container only; DNS-rebinding protection stays on
+      # MCP_ALLOWED_HOSTS: mcp.example.com  # add the public host name when deployed
+    command: ["python", "-m", "echr_mcp", "--transport", "http", "--port", "8100"]
+    ports:
+      - "8103:8100"
+
+volumes:
+  deploy-db:

@@ -1,0 +1,12 @@
+{
+  "baseUrl": "http://localhost:3100",
+  "viewport": { "width": 1440, "height": 900 },
+  "steps": [
+    {
+      "action": "goto",
+      "url": "/lab?q=is%20it%20cruel%20to%20keep%20a%20condemned%20prisoner%20waiting%20for%20execution&chunking=recursive&k=5"
+    },
+    { "action": "waitFor", "selector": "[data-testid=lab-column-reranked] [data-testid=lab-hit]" },
+    { "action": "screenshot", "name": "I2-lab-paraphrase", "fullPage": true }
+  ]
+}

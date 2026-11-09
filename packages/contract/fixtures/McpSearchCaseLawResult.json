@@ -1,0 +1,84 @@
+{
+  "query": "deport a person to a country where they face a real risk of torture, national security",
+  "filters": "Article 3",
+  "hits": [
+    {
+      "rank": 1,
+      "paragraph_id": "002-44§u3",
+      "para_label": "Summary, para 3",
+      "doc_id": "002-44",
+      "case_name": "Othman (Abu Qatada) v. the United Kingdom",
+      "doc_type": "legal_summary",
+      "doc_type_label": "Legal summary",
+      "date": "2012-01-17",
+      "outcome": "mixed",
+      "articles": [
+        "3",
+        "5",
+        "5-1",
+        "6",
+        "6-1",
+        "13",
+        "3+13"
+      ],
+      "section": "Other",
+      "quote": "Real risk of evidence obtained by torture of third parties being admitted at the applicant’s retrial: deportation would constitute a violation",
+      "hudoc_url": "https://hudoc.echr.coe.int/eng?i=002-44#:~:text=Real%20risk%20of%20evidence%20obtained%20by%20torture%20of",
+      "cite": "[Othman (Abu Qatada) v. the United Kingdom, Legal summary, Summary, para 3]"
+    },
+    {
+      "rank": 2,
+      "paragraph_id": "001-108629§25",
+      "para_label": "§25",
+      "doc_id": "001-108629",
+      "case_name": "Othman (Abu Qatada) v. the United Kingdom",
+      "doc_type": "judgment",
+      "doc_type_label": "Judgment",
+      "date": "2012-01-17",
+      "outcome": "mixed",
+      "articles": [
+        "3",
+        "3+13",
+        "5",
+        "5-1",
+        "6",
+        "6-1",
+        "13"
+      ],
+      "section": "The Facts",
+      "quote": "The Secretary of State certified that the decision to deport the applicant was taken in the interests of national security. The applicant appealed to SIAC against that decision arguing, inter alia, that it was incompatible with Articles 2, 3, 5 and 6 of the Convention. Relying on his previous asylum claim, he argued that his high profile would mean he would be of real interest to the Jordanian authorities. If returned, he would also face retrial for the offences for which he had been convicted in absentia.",
+      "hudoc_url": "https://hudoc.echr.coe.int/eng?i=001-108629#:~:text=The%20Secretary%20of%20State%20certified%20that%20the%20decision",
+      "cite": "[Othman (Abu Qatada) v. the United Kingdom, Judgment, §25]"
+    },
+    {
+      "rank": 3,
+      "paragraph_id": "001-108629§185",
+      "para_label": "§185",
+      "doc_id": "001-108629",
+      "case_name": "Othman (Abu Qatada) v. the United Kingdom",
+      "doc_type": "judgment",
+      "doc_type_label": "Judgment",
+      "date": "2012-01-17",
+      "outcome": "mixed",
+      "articles": [
+        "3",
+        "3+13",
+        "5",
+        "5-1",
+        "6",
+        "6-1",
+        "13"
+      ],
+      "section": "The Law",
+      "quote": "Third, it is well-established that expulsion by a Contracting State may give rise to an issue under Article 3, and hence engage the responsibility of that State under the Convention, where substantial grounds have been shown for believing that the person concerned, if deported, faces a real risk of being subjected to treatment contrary to Article 3. In such a case, Article 3 implies an obligation not to deport the person in question to that country.",
+      "hudoc_url": "https://hudoc.echr.coe.int/eng?i=001-108629#:~:text=Third%2C%20it%20is%20well%2Destablished%20that%20expulsion%20by%20a",
+      "cite": "[Othman (Abu Qatada) v. the United Kingdom, Judgment, §185]"
+    }
+  ],
+  "corpus": {
+    "documents": 98,
+    "data_source": "snapshot",
+    "scope": "UK cases only (plus the Convention and the Human Rights Act 1998)",
+    "sample_note": "Small committed sample, not the full HUDOC download."
+  }
+}

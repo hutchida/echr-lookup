@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$ref": "#/$defs/Paragraph",
+  "$defs": {
+    "Paragraph": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "maxLength": 64,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*§[A-Za-z0-9._-]+$",
+          "description": "<doc-id>§<ref>, e.g. 001-57619§88"
+        },
+        "doc_id": {
+          "type": "string",
+          "maxLength": 40,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*$"
+        },
+        "number": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "paragraph number as printed; null for op/unnumbered items"
+        },
+        "section": {
+          "type": "string",
+          "enum": [
+            "Procedure",
+            "The Facts",
+            "The Law",
+            "Operative provisions",
+            "Other"
+          ]
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 20000
+        }
+      },
+      "required": [
+        "id",
+        "doc_id",
+        "number",
+        "section",
+        "text"
+      ],
+      "additionalProperties": false,
+      "description": "One citable paragraph of a document (element of GET /case/{id})"
+    }
+  }
+}

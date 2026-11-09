@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$ref": "#/$defs/McpCheckQuoteResult",
+  "$defs": {
+    "McpCheckQuoteResult": {
+      "type": "object",
+      "properties": {
+        "paragraph_id": {
+          "type": "string",
+          "maxLength": 64
+        },
+        "paragraph_found": {
+          "type": "boolean"
+        },
+        "verbatim": {
+          "type": "boolean",
+          "description": "true = the quote appears in the paragraph word for word, ignoring only whitespace differences, curly vs straight quotes and dashes, and '…' marking an omission"
+        },
+        "closest_match": {
+          "anyOf": [
+            {
+              "type": "string",
+              "maxLength": 600
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "the paragraph's most similar passage (verbatim from the paragraph); null when the paragraph is not found"
+        },
+        "similarity": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "1 = identical after normalisation"
+        },
+        "para_label": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 50,
+              "description": "readable name of the paragraph, for display and citing: '§79' for a numbered paragraph; 'Law, para 2' for an unnumbered one (n counts within that section of the document, in order); 'Article 8' for legislation. The stable id is paragraph_id"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "the paragraph's readable label; null when the paragraph is not found"
+        },
+        "cite": {
+          "anyOf": [
+            {
+              "type": "string",
+              "maxLength": 200,
+              "description": "ready-to-paste citation '[<case name>, <doc type label>, <para_label>]', e.g. '[Chahal v. the United Kingdom, Judgment, §79]' or '[Harkins and Edwards v. the United Kingdom, Legal summary, Law, para 2]'. Copy it verbatim after the claim it supports; when two paragraphs of one result would share a string, the doc id is added to the doc type, e.g. 'Judgment (001-58004)'"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "corpus": {
+          "type": "object",
+          "properties": {
+            "documents": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991,
+              "description": "documents loaded for this data_source"
+            },
+            "data_source": {
+              "type": "string",
+              "enum": [
+                "snapshot",
+                "full"
+              ]
+            },
+            "scope": {
+              "type": "string",
+              "maxLength": 200,
+              "description": "e.g. 'UK cases only (plus the Convention and the Human Rights Act 1998)'"
+            },
+            "sample_note": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "maxLength": 300
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "snapshot mode: 'Small committed sample, not the full HUDOC download.'; full mode: null"
+            }
+          },
+          "required": [
+            "documents",
+            "data_source",
+            "scope",
+            "sample_note"
+          ],
+          "additionalProperties": false,
+          "description": "what the corpus covers: 'not found here' does not mean the Court never decided it"
+        }
+      },
+      "required": [
+        "paragraph_id",
+        "paragraph_found",
+        "verbatim",
+        "closest_match",
+        "similarity",
+        "para_label",
+        "cite",
+        "corpus"
+      ],
+      "additionalProperties": false,
+      "description": "check_quote result: deterministic, no model involved"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$ref": "#/$defs/McpSearchCaseLawInput",
+  "$defs": {
+    "McpSearchCaseLawInput": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500,
+          "description": "what to look for, in plain words, e.g. 'deportation of a settled migrant with a criminal record, family life'"
+        },
+        "article": {
+          "description": "Convention article, HUDOC style: '3', '8', 'P1-1'; matches sub-paragraphs too ('8' matches '8-1')",
+          "type": "string",
+          "maxLength": 20,
+          "pattern": "^(?:P\\d+-)?\\d{1,2}(?:-[0-9a-z]+)*$"
+        },
+        "doc_type": {
+          "description": "only this document type",
+          "type": "string",
+          "enum": [
+            "judgment",
+            "decision",
+            "communicated",
+            "legal_summary",
+            "legislation"
+          ]
+        },
+        "outcome": {
+          "description": "only documents with this normalised outcome ('mixed' = at least one violation and one no-violation finding)",
+          "type": "string",
+          "enum": [
+            "violation",
+            "no_violation",
+            "mixed",
+            "inadmissible",
+            "partly_inadmissible",
+            "struck_out",
+            "admissible",
+            "other",
+            "not_applicable"
+          ]
+        },
+        "year_from": {
+          "description": "first year included",
+          "type": "integer",
+          "minimum": 1950,
+          "maximum": 2100
+        },
+        "year_to": {
+          "description": "last year included",
+          "type": "integer",
+          "minimum": 1950,
+          "maximum": 2100
+        },
+        "limit": {
+          "description": "number of paragraphs to return (default 8, max 10)",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10
+        }
+      },
+      "required": [
+        "query"
+      ],
+      "additionalProperties": false,
+      "description": "search_case_law arguments"
+    }
+  }
+}

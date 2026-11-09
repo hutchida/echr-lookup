@@ -1,0 +1,209 @@
+{
+  "corpus": {
+    "documents": 98,
+    "data_source": "snapshot",
+    "scope": "UK cases only (plus the Convention and the Human Rights Act 1998)",
+    "sample_note": "Small committed sample, not the full HUDOC download."
+  },
+  "totals": {
+    "documents": 98,
+    "paragraphs": 9430
+  },
+  "by_doc_type": [
+    {
+      "key": "judgment",
+      "label": "Judgment",
+      "count": 41
+    },
+    {
+      "key": "decision",
+      "label": "Decision",
+      "count": 40
+    },
+    {
+      "key": "legal_summary",
+      "label": "Legal summary",
+      "count": 15
+    },
+    {
+      "key": "legislation",
+      "label": "Legislation",
+      "count": 2
+    }
+  ],
+  "by_outcome": [
+    {
+      "key": "inadmissible",
+      "label": "Inadmissible: the whole application was declared inadmissible",
+      "count": 35
+    },
+    {
+      "key": "violation",
+      "label": "Violation: only violation findings",
+      "count": 23
+    },
+    {
+      "key": "no_violation",
+      "label": "No violation: only no-violation findings",
+      "count": 21
+    },
+    {
+      "key": "mixed",
+      "label": "Mixed: at least one violation and at least one no-violation finding",
+      "count": 10
+    },
+    {
+      "key": "struck_out",
+      "label": "Struck out of the list",
+      "count": 4
+    },
+    {
+      "key": "not_applicable",
+      "label": "Not applicable (legislation, communicated cases)",
+      "count": 2
+    },
+    {
+      "key": "partly_inadmissible",
+      "label": "Partly inadmissible: part of the application was declared inadmissible or struck out",
+      "count": 2
+    },
+    {
+      "key": "admissible",
+      "label": "Declared admissible (decision on admissibility only)",
+      "count": 1
+    }
+  ],
+  "by_article": [
+    {
+      "key": "3",
+      "count": 59
+    },
+    {
+      "key": "8",
+      "count": 44
+    },
+    {
+      "key": "35",
+      "count": 31
+    },
+    {
+      "key": "41",
+      "count": 21
+    },
+    {
+      "key": "13",
+      "count": 16
+    },
+    {
+      "key": "5",
+      "count": 15
+    },
+    {
+      "key": "2",
+      "count": 13
+    },
+    {
+      "key": "14",
+      "count": 11
+    },
+    {
+      "key": "6",
+      "count": 11
+    },
+    {
+      "key": "1",
+      "count": 7
+    },
+    {
+      "key": "34",
+      "count": 5
+    },
+    {
+      "key": "10",
+      "count": 4
+    },
+    {
+      "key": "29",
+      "count": 4
+    },
+    {
+      "key": "P1-3",
+      "count": 4
+    },
+    {
+      "key": "37",
+      "count": 3
+    },
+    {
+      "key": "46",
+      "count": 3
+    },
+    {
+      "key": "15",
+      "count": 2
+    },
+    {
+      "key": "39",
+      "count": 2
+    },
+    {
+      "key": "9",
+      "count": 2
+    },
+    {
+      "key": "11",
+      "count": 1
+    },
+    {
+      "key": "28",
+      "count": 1
+    },
+    {
+      "key": "33",
+      "count": 1
+    },
+    {
+      "key": "36",
+      "count": 1
+    },
+    {
+      "key": "38",
+      "count": 1
+    },
+    {
+      "key": "4",
+      "count": 1
+    }
+  ],
+  "year_range": {
+    "from": 1950,
+    "to": 2025
+  },
+  "missing": [
+    {
+      "what": "Everything outside this sample",
+      "count": null,
+      "why": "Snapshot mode: a small committed sample of UK documents chosen for the demo, not the full HUDOC download (about 3,500 UK documents)."
+    },
+    {
+      "what": "Other states' cases",
+      "count": null,
+      "why": "Only cases against the United Kingdom were downloaded."
+    },
+    {
+      "what": "European Commission of Human Rights reports",
+      "count": 307,
+      "why": "HUDOC lists them without a document type this system supports, so they were skipped (full download)."
+    },
+    {
+      "what": "Scanned older decisions (1970s–2000s)",
+      "count": 212,
+      "why": "HUDOC holds them as scanned images with no text to search or quote (full download)."
+    },
+    {
+      "what": "Communicated cases without numbered paragraphs",
+      "count": 45,
+      "why": "Their text has no paragraph numbers to cite, so they failed parsing (full download)."
+    }
+  ]
+}

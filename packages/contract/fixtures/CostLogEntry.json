@@ -1,0 +1,12 @@
+{
+  "id": "cost-g0b-embed-001",
+  "timestamp": "2026-11-03T16:38:51Z",
+  "model": "BAAI/bge-small-en-v1.5",
+  "purpose": "embed",
+  "tokens_in": 1070616,
+  "tokens_out": 0,
+  "tokens_cached": 0,
+  "cost_usd": 0.0,
+  "latency_ms": 41334.0,
+  "request_id": "ingest-g0b-prototype-snapshot"
+}

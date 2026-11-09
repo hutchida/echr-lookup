@@ -1,0 +1,12 @@
+**
+!py/
+!infra/migrations/
+!config/
+!data/snapshot/
+!packages/contract/schema/
+!packages/contract/fixtures/
+py/.venv
+**/__pycache__
+**/*.pyc
+**/.pytest_cache
+**/.ruff_cache

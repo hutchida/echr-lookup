@@ -1,0 +1,240 @@
+{
+  "answer": "The most common ground is manifestly ill-founded: 22 of the 27 matching admissibility decisions about deportation, expulsion, removal or extradition dated between 1990-01-01 and 2025-12-31 that were declared inadmissible.",
+  "count": 22,
+  "scope_total": null,
+  "top_group": {
+    "key": "manifestly_ill_founded",
+    "label": "manifestly ill-founded",
+    "count": 22
+  },
+  "filters": "admissibility decisions about deportation, expulsion, removal or extradition dated between 1990-01-01 and 2025-12-31 that were declared inadmissible",
+  "definitions": [
+    "'Declared inadmissible' means the whole application was declared inadmissible; partly inadmissible decisions are not counted.",
+    "HUDOC has no topic field, so a 'deportation' case is one that raises Article 3, 8 or 5(1)(f) and has at least 2 paragraphs containing a word starting deport, expel, expulsion, extradit or removal.",
+    "Grounds come from HUDOC's conclusion where it names one, otherwise from the decision text; a decision can rest on several grounds, so the rows can add up to more than the total."
+  ],
+  "sql": "WITH matched AS (\n  SELECT d.item_id, d.case_name, d.date, d.doc_type, d.outcome, d.articles, d.inadmissibility_grounds\n  FROM documents d\n  WHERE d.doc_type IN ('decision')\n    AND d.outcome IN ('inadmissible')\n    AND d.date >= '1990-01-01'\n    AND d.date <= '2025-12-31'\n    AND EXISTS (SELECT 1 FROM unnest(d.articles) AS a WHERE split_part(a, '-', 1) IN ('3', '8', '5-1-f') OR a IN ('3', '8', '5-1-f'))\n    AND (SELECT count(*) FROM paragraphs p WHERE p.doc_id = d.item_id AND p.text ~* '[[:<:]](deport|expel|expulsion|extradit|removal)') >= 2\n)\nSELECT COALESCE(g, '(not stated)') AS reason, count(*) AS documents\nFROM matched LEFT JOIN LATERAL unnest(inadmissibility_grounds) AS g ON true\nGROUP BY 1 ORDER BY 2 DESC, 1 LIMIT 20;\n-- also run on the same `matched` set: SELECT count(*) FROM matched; and the 8 most recent items, each with an example paragraph",
+  "columns": [
+    "reason",
+    "documents"
+  ],
+  "rows": [
+    [
+      "manifestly_ill_founded",
+      22
+    ],
+    [
+      "non_exhaustion",
+      4
+    ],
+    [
+      "incompatible_ratione_materiae",
+      2
+    ]
+  ],
+  "matching_cases": [
+    {
+      "doc_id": "001-231646",
+      "case_name": "Horne v. the United Kingdom",
+      "doc_type": "decision",
+      "doc_type_label": "Decision",
+      "date": "2024-02-13",
+      "outcome": "inadmissible",
+      "hudoc_url": "https://hudoc.echr.coe.int/eng?i=001-231646"
+    },
+    {
+      "doc_id": "001-224490",
+      "case_name": "Hafeez v. the United Kingdom",
+      "doc_type": "decision",
+      "doc_type_label": "Decision",
+      "date": "2023-03-28",
+      "outcome": "inadmissible",
+      "hudoc_url": "https://hudoc.echr.coe.int/eng?i=001-224490"
+    },
+    {
+      "doc_id": "001-223629",
+      "case_name": "Osagiede v. the United Kingdom",
+      "doc_type": "decision",
+      "doc_type_label": "Decision",
+      "date": "2023-02-07",
+      "outcome": "inadmissible",
+      "hudoc_url": "https://hudoc.echr.coe.int/eng?i=001-223629"
+    },
+    {
+      "doc_id": "001-182755",
+      "case_name": "Khaksar v. the United Kingdom",
+      "doc_type": "decision",
+      "doc_type_label": "Decision",
+      "date": "2018-04-03",
+      "outcome": "inadmissible",
+      "hudoc_url": "https://hudoc.echr.coe.int/eng?i=001-182755"
+    },
+    {
+      "doc_id": "001-173881",
+      "case_name": "Draga v. the United Kingdom",
+      "doc_type": "decision",
+      "doc_type_label": "Decision",
+      "date": "2017-04-25",
+      "outcome": "inadmissible",
+      "hudoc_url": "https://hudoc.echr.coe.int/eng?i=001-173881"
+    },
+    {
+      "doc_id": "001-172305",
+      "case_name": "J.M.O. v. the United Kingdom",
+      "doc_type": "decision",
+      "doc_type_label": "Decision",
+      "date": "2017-02-21",
+      "outcome": "inadmissible",
+      "hudoc_url": "https://hudoc.echr.coe.int/eng?i=001-172305"
+    },
+    {
+      "doc_id": "001-161986",
+      "case_name": "I.A.A. and Others v. the United Kingdom",
+      "doc_type": "decision",
+      "doc_type_label": "Decision",
+      "date": "2016-03-08",
+      "outcome": "inadmissible",
+      "hudoc_url": "https://hudoc.echr.coe.int/eng?i=001-161986"
+    },
+    {
+      "doc_id": "001-150856",
+      "case_name": "Aswat v. the United Kingdom",
+      "doc_type": "decision",
+      "doc_type_label": "Decision",
+      "date": "2015-01-06",
+      "outcome": "inadmissible",
+      "hudoc_url": "https://hudoc.echr.coe.int/eng?i=001-150856"
+    },
+    {
+      "doc_id": "001-142459",
+      "case_name": "Ignaoua and Others v. the United Kingdom",
+      "doc_type": "decision",
+      "doc_type_label": "Decision",
+      "date": "2014-03-18",
+      "outcome": "inadmissible",
+      "hudoc_url": "https://hudoc.echr.coe.int/eng?i=001-142459"
+    },
+    {
+      "doc_id": "001-141330",
+      "case_name": "I.R. and G.T. v. the United Kingdom",
+      "doc_type": "decision",
+      "doc_type_label": "Decision",
+      "date": "2014-01-28",
+      "outcome": "inadmissible",
+      "hudoc_url": "https://hudoc.echr.coe.int/eng?i=001-141330"
+    },
+    {
+      "doc_id": "001-127160",
+      "case_name": "Ismail v. the United Kingdom",
+      "doc_type": "decision",
+      "doc_type_label": "Decision",
+      "date": "2013-09-17",
+      "outcome": "inadmissible",
+      "hudoc_url": "https://hudoc.echr.coe.int/eng?i=001-127160"
+    },
+    {
+      "doc_id": "001-127188",
+      "case_name": "F.N. v. the United Kingdom",
+      "doc_type": "decision",
+      "doc_type_label": "Decision",
+      "date": "2013-09-17",
+      "outcome": "inadmissible",
+      "hudoc_url": "https://hudoc.echr.coe.int/eng?i=001-127188"
+    },
+    {
+      "doc_id": "001-127061",
+      "case_name": "F.A. v. the United Kingdom",
+      "doc_type": "decision",
+      "doc_type_label": "Decision",
+      "date": "2013-09-10",
+      "outcome": "inadmissible",
+      "hudoc_url": "https://hudoc.echr.coe.int/eng?i=001-127061"
+    },
+    {
+      "doc_id": "001-114508",
+      "case_name": "M.S. v. the United Kingdom",
+      "doc_type": "decision",
+      "doc_type_label": "Decision",
+      "date": "2012-10-16",
+      "outcome": "inadmissible",
+      "hudoc_url": "https://hudoc.echr.coe.int/eng?i=001-114508"
+    },
+    {
+      "doc_id": "001-113684",
+      "case_name": "Abdi Ibrahim v. the United Kingdom",
+      "doc_type": "decision",
+      "doc_type_label": "Decision",
+      "date": "2012-09-18",
+      "outcome": "inadmissible",
+      "hudoc_url": "https://hudoc.echr.coe.int/eng?i=001-113684"
+    },
+    {
+      "doc_id": "001-111361",
+      "case_name": "H.A.L. v. the United Kingdom",
+      "doc_type": "decision",
+      "doc_type_label": "Decision",
+      "date": "2012-05-22",
+      "outcome": "inadmissible",
+      "hudoc_url": "https://hudoc.echr.coe.int/eng?i=001-111361"
+    },
+    {
+      "doc_id": "001-105173",
+      "case_name": "Anam v. the United Kingdom",
+      "doc_type": "decision",
+      "doc_type_label": "Decision",
+      "date": "2011-06-07",
+      "outcome": "inadmissible",
+      "hudoc_url": "https://hudoc.echr.coe.int/eng?i=001-105173"
+    },
+    {
+      "doc_id": "001-98645",
+      "case_name": "Miah v. the United Kingdom",
+      "doc_type": "decision",
+      "doc_type_label": "Decision",
+      "date": "2010-04-27",
+      "outcome": "inadmissible",
+      "hudoc_url": "https://hudoc.echr.coe.int/eng?i=001-98645"
+    },
+    {
+      "doc_id": "001-97175",
+      "case_name": "Yesufa v. the United Kingdom",
+      "doc_type": "decision",
+      "doc_type_label": "Decision",
+      "date": "2010-01-26",
+      "outcome": "inadmissible",
+      "hudoc_url": "https://hudoc.echr.coe.int/eng?i=001-97175"
+    },
+    {
+      "doc_id": "001-96380",
+      "case_name": "Khan Manwar v. the United Kingdom",
+      "doc_type": "decision",
+      "doc_type_label": "Decision",
+      "date": "2009-12-08",
+      "outcome": "inadmissible",
+      "hudoc_url": "https://hudoc.echr.coe.int/eng?i=001-96380"
+    }
+  ],
+  "params": {
+    "group_by": "reason",
+    "topic": "deportation",
+    "keywords": [],
+    "articles": [],
+    "doc_types": [
+      "decision"
+    ],
+    "outcomes": [
+      "inadmissible"
+    ],
+    "grounds": [],
+    "chambers": [],
+    "count_of": "top_group",
+    "date_from": "1990-01-01",
+    "date_to": "2025-12-31"
+  },
+  "corpus": {
+    "documents": 98,
+    "data_source": "snapshot",
+    "scope": "UK cases only (plus the Convention and the Human Rights Act 1998)",
+    "sample_note": "Small committed sample, not the full HUDOC download."
+  }
+}

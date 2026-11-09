@@ -1,0 +1,7 @@
+# Lets `docker compose up -d` work from the repo root (and from any agent worktree).
+# The fixed project name means every worktree shares ONE database container on :5433
+# instead of each folder trying to start its own and colliding on the port.
+name: echr-lookup
+
+include:
+  - infra/docker-compose.yml

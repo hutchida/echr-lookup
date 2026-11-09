@@ -1,0 +1,7 @@
+{
+  "status": "ok",
+  "service": "echr-lookup-api",
+  "version": "0.0.0",
+  "db": { "reachable": true, "extensions": ["pg_search", "vector"] },
+  "data_source": "snapshot"
+}

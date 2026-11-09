@@ -1,0 +1,28 @@
+{
+  "item_id": "001-98645",
+  "case_name": "MIAH v. THE UNITED KINGDOM",
+  "application_numbers": [
+    "53080/07"
+  ],
+  "ecli": "ECLI:CE:ECHR:2010:0427DEC005308007",
+  "doc_type": "decision",
+  "chamber": "Chamber",
+  "date": "2010-04-27",
+  "articles": [
+    "3",
+    "7",
+    "8"
+  ],
+  "outcome_raw": "Inadmissible",
+  "outcome": "inadmissible",
+  "inadmissibility_grounds": [
+    "manifestly_ill_founded",
+    "incompatible_ratione_materiae"
+  ],
+  "inadmissibility_grounds_source": "text",
+  "importance": 4,
+  "language": "en",
+  "source_url": "https://hudoc.echr.coe.int/eng?i=001-98645",
+  "sha256": "5f65310442a7a0c785cb100739e98b206d56be2b3c69cb5845e604c0a7522fa0",
+  "data_source": "snapshot"
+}

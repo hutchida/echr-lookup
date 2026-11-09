@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$ref": "#/$defs/Health",
+  "$defs": {
+    "Health": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "ok",
+            "degraded"
+          ]
+        },
+        "service": {
+          "type": "string",
+          "const": "echr-lookup-api"
+        },
+        "version": {
+          "type": "string"
+        },
+        "db": {
+          "type": "object",
+          "properties": {
+            "reachable": {
+              "type": "boolean"
+            },
+            "extensions": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "Postgres extensions installed, e.g. vector, pg_search"
+            }
+          },
+          "required": [
+            "reachable",
+            "extensions"
+          ],
+          "additionalProperties": false
+        },
+        "data_source": {
+          "type": "string",
+          "enum": [
+            "snapshot",
+            "full"
+          ]
+        }
+      },
+      "required": [
+        "status",
+        "service",
+        "version",
+        "db",
+        "data_source"
+      ],
+      "additionalProperties": false,
+      "description": "GET /health response"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "baseUrl": "http://localhost:3100",
+  "viewport": { "width": 1440, "height": 900 },
+  "steps": [
+    {
+      "action": "goto",
+      "url": "/lab?q=Does%20the%20Convention%20stop%20the%20UK%20deporting%20criminals%3F&chunking=recursive&k=10"
+    },
+    { "action": "waitFor", "selector": "[data-testid=lab-column-reranked] [data-testid=lab-hit]" },
+    { "action": "waitFor", "selector": "[data-testid=lab-column-bm25] [data-testid=lab-hit]" },
+    { "action": "screenshot", "name": "I2-lab-q1", "fullPage": true }
+  ]
+}

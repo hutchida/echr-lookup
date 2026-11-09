@@ -1,0 +1,136 @@
+{
+  "answer": "The indexed corpus has 10 Grand Chamber judgments; 9 of them found at least one violation.",
+  "count": 9,
+  "scope_total": 10,
+  "top_group": null,
+  "filters": "Grand Chamber judgments that found at least one violation",
+  "definitions": [
+    "'Found a violation' counts outcomes 'violation' (only violation findings) and 'mixed' (at least one violation and at least one no-violation finding).",
+    "Court documents only by default: judgments, decisions and communicated cases; legal summaries re-describe judgments and would double count.",
+    "Grand Chamber = the Court's 17-judge formation; 'Chamber' means the ordinary 7-judge Chamber."
+  ],
+  "sql": "-- 1) the total, without the outcome filter\nWITH matched AS (\n  SELECT d.item_id, d.case_name, d.date, d.doc_type, d.outcome, d.articles, d.inadmissibility_grounds\n  FROM documents d\n  WHERE d.doc_type IN ('judgment')\n    AND d.chamber IN ('Grand Chamber')\n)\nSELECT count(*) AS documents FROM matched;\n-- 2) how many of those have the outcome\nWITH matched AS (\n  SELECT d.item_id, d.case_name, d.date, d.doc_type, d.outcome, d.articles, d.inadmissibility_grounds\n  FROM documents d\n  WHERE d.doc_type IN ('judgment')\n    AND d.outcome IN ('violation', 'mixed')\n    AND d.chamber IN ('Grand Chamber')\n)\nSELECT count(*) AS documents FROM matched;\n-- also run on the same `matched` set: SELECT count(*) FROM matched; and the 8 most recent items, each with an example paragraph",
+  "columns": [
+    "set",
+    "documents"
+  ],
+  "rows": [
+    [
+      "Grand Chamber judgments",
+      10
+    ],
+    [
+      "Found at least one violation",
+      9
+    ]
+  ],
+  "matching_cases": [
+    {
+      "doc_id": "001-122664",
+      "case_name": "Vinter and Others v. the United Kingdom",
+      "doc_type": "judgment",
+      "doc_type_label": "Judgment",
+      "date": "2013-07-09",
+      "outcome": "violation",
+      "hudoc_url": "https://hudoc.echr.coe.int/eng?i=001-122664"
+    },
+    {
+      "doc_id": "001-105606",
+      "case_name": "Al-Skeini and Others v. the United Kingdom",
+      "doc_type": "judgment",
+      "doc_type_label": "Judgment",
+      "date": "2011-07-07",
+      "outcome": "violation",
+      "hudoc_url": "https://hudoc.echr.coe.int/eng?i=001-105606"
+    },
+    {
+      "doc_id": "001-105612",
+      "case_name": "Al-Jedda v. the United Kingdom",
+      "doc_type": "judgment",
+      "doc_type_label": "Judgment",
+      "date": "2011-07-07",
+      "outcome": "violation",
+      "hudoc_url": "https://hudoc.echr.coe.int/eng?i=001-105612"
+    },
+    {
+      "doc_id": "001-91403",
+      "case_name": "A. and Others v. the United Kingdom",
+      "doc_type": "judgment",
+      "doc_type_label": "Judgment",
+      "date": "2009-02-19",
+      "outcome": "mixed",
+      "hudoc_url": "https://hudoc.echr.coe.int/eng?i=001-91403"
+    },
+    {
+      "doc_id": "001-90051",
+      "case_name": "S. and Marper v. the United Kingdom",
+      "doc_type": "judgment",
+      "doc_type_label": "Judgment",
+      "date": "2008-12-04",
+      "outcome": "violation",
+      "hudoc_url": "https://hudoc.echr.coe.int/eng?i=001-90051"
+    },
+    {
+      "doc_id": "001-84709",
+      "case_name": "Saadi v. the United Kingdom",
+      "doc_type": "judgment",
+      "doc_type_label": "Judgment",
+      "date": "2008-01-29",
+      "outcome": "mixed",
+      "hudoc_url": "https://hudoc.echr.coe.int/eng?i=001-84709"
+    },
+    {
+      "doc_id": "001-70442",
+      "case_name": "Hirst v. the United Kingdom (no. 2)",
+      "doc_type": "judgment",
+      "doc_type_label": "Judgment",
+      "date": "2005-10-06",
+      "outcome": "violation",
+      "hudoc_url": "https://hudoc.echr.coe.int/eng?i=001-70442"
+    },
+    {
+      "doc_id": "001-58004",
+      "case_name": "Chahal v. the United Kingdom",
+      "doc_type": "judgment",
+      "doc_type_label": "Judgment",
+      "date": "1996-11-15",
+      "outcome": "mixed",
+      "hudoc_url": "https://hudoc.echr.coe.int/eng?i=001-58004"
+    },
+    {
+      "doc_id": "001-57943",
+      "case_name": "McCann and Others v. the United Kingdom",
+      "doc_type": "judgment",
+      "doc_type_label": "Judgment",
+      "date": "1995-09-27",
+      "outcome": "violation",
+      "hudoc_url": "https://hudoc.echr.coe.int/eng?i=001-57943"
+    }
+  ],
+  "params": {
+    "group_by": "none",
+    "topic": null,
+    "keywords": [],
+    "articles": [],
+    "doc_types": [
+      "judgment"
+    ],
+    "outcomes": [
+      "violation",
+      "mixed"
+    ],
+    "grounds": [],
+    "chambers": [
+      "Grand Chamber"
+    ],
+    "count_of": "total_and_subset",
+    "date_from": null,
+    "date_to": null
+  },
+  "corpus": {
+    "documents": 98,
+    "data_source": "snapshot",
+    "scope": "UK cases only (plus the Convention and the Human Rights Act 1998)",
+    "sample_note": "Small committed sample, not the full HUDOC download."
+  }
+}

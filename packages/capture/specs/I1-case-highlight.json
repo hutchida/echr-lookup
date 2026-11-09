@@ -1,0 +1,8 @@
+{
+  "baseUrl": "http://localhost:3100",
+  "steps": [
+    { "action": "goto", "url": "/case/001-57619#p91" },
+    { "action": "waitFor", "selector": "[data-testid=case-paragraph][data-highlighted=true]" },
+    { "action": "screenshot", "name": "I1-case-highlight" }
+  ]
+}

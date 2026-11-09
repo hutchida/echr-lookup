@@ -1,0 +1,18 @@
+{
+  "query": "Can the UK extradite a person who faces the death row phenomenon?",
+  "mode": "hybrid",
+  "chunking": "recursive",
+  "k": 5,
+  "filters": {
+    "article": "3",
+    "doc_types": [
+      "judgment"
+    ],
+    "outcomes": [
+      "violation",
+      "mixed"
+    ],
+    "date_from": "1980-01-01",
+    "date_to": "2000-12-31"
+  }
+}

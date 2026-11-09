@@ -1,0 +1,13 @@
+{
+  "baseUrl": "http://localhost:3100",
+  "viewport": { "width": 1280, "height": 900 },
+  "steps": [
+    { "action": "goto", "url": "/stats" },
+    { "action": "waitFor", "selector": "[data-testid=stats-counts]" },
+    { "action": "waitFor", "selector": "[data-testid=stats-ingest]" },
+    { "action": "waitFor", "selector": "[data-testid=stats-costs]" },
+    { "action": "waitFor", "selector": "[data-testid=eval-row]" },
+    { "action": "screenshot", "name": "I3-stats", "fullPage": true },
+    { "action": "screenshot", "name": "I3-stats-eval", "selector": "[data-testid=stats-eval]" }
+  ]
+}

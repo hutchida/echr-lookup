@@ -1,0 +1,119 @@
+{
+  "request_id": "req-g0b-fixture-stats",
+  "question": "How many UK deportation or expulsion complaints in the snapshot were declared inadmissible, under which Articles?",
+  "route": "stats",
+  "answer_text": "27 decisions in the demo snapshot. Article 3 is raised in 19 of them and Article 8 in 16. Most were rejected as manifestly ill-founded; a few for failure to exhaust domestic remedies.",
+  "claims": [
+    {
+      "id": "c1",
+      "text": "27 inadmissible deportation/expulsion decisions are in the snapshot.",
+      "citation_ids": [],
+      "status": "supported",
+      "reason": "Count comes straight from the SQL shown, not from a model; the example paragraphs only illustrate it."
+    }
+  ],
+  "citations": [
+    {
+      "paragraph_id": "001-231646§60",
+      "doc_id": "001-231646",
+      "case_name": "Horne v. The United Kingdom",
+      "doc_type": "decision",
+      "quote": "Accordingly, the Court considers that the applicant’s complaint under Article 3 of the Convention must be rejected as manifestly ill-founded, in accordance with Article 35 §§ 3 and 4 of the Convention.",
+      "link_target": "/case/001-231646#p60"
+    },
+    {
+      "paragraph_id": "001-223629§16",
+      "doc_id": "001-223629",
+      "case_name": "Osagiede v. The United Kingdom",
+      "doc_type": "decision",
+      "quote": "In light of the foregoing, the Court considers that the applicant’s complaint under Article 8 of the Convention is inadmissible as being premature and/or on the ground that domestic remedies have not yet been exhausted. Accordingly, this complaint must be rejected as",
+      "link_target": "/case/001-223629#p16"
+    },
+    {
+      "paragraph_id": "001-182755§34",
+      "doc_id": "001-182755",
+      "case_name": "Khaksar v. The United Kingdom",
+      "doc_type": "decision",
+      "quote": "Accordingly, the Court considers that the applicant has failed to exhaust all domestic remedies available to him and that the application must be rejected pursuant to Article 35 § 1 of the Convention.\nFor these reasons, the Court, unanimously,\nDeclares the application",
+      "link_target": "/case/001-182755#p34"
+    }
+  ],
+  "stats": {
+    "question": "How many UK deportation or expulsion complaints in the snapshot were declared inadmissible, under which Articles?",
+    "sql": "SELECT 'Article ' || a AS article, count(DISTINCT d.item_id) AS decisions\nFROM documents d, unnest(d.articles) AS a\nWHERE d.doc_type = 'decision' AND d.outcome = 'inadmissible' AND a IN ('3', '8', '5')\n  AND d.item_id IN (SELECT doc_id FROM chunks WHERE text @@@ 'deportation OR expulsion OR removal OR extradition')\nGROUP BY a ORDER BY decisions DESC",
+    "columns": [
+      "article",
+      "decisions"
+    ],
+    "rows": [
+      [
+        "Article 3",
+        19
+      ],
+      [
+        "Article 8",
+        16
+      ],
+      [
+        "Article 5",
+        4
+      ]
+    ],
+    "matching_cases": [
+      {
+        "doc_id": "001-231646",
+        "case_name": "Horne v. The United Kingdom",
+        "doc_type": "decision",
+        "paragraph_id": "001-231646§60",
+        "quote": "Accordingly, the Court considers that the applicant’s complaint under Article 3 of the Convention must be rejected as manifestly ill-founded, in accordance with Article 35 §§ 3 and 4 of the Convention.",
+        "link_target": "/case/001-231646#p60"
+      },
+      {
+        "doc_id": "001-223629",
+        "case_name": "Osagiede v. The United Kingdom",
+        "doc_type": "decision",
+        "paragraph_id": "001-223629§16",
+        "quote": "In light of the foregoing, the Court considers that the applicant’s complaint under Article 8 of the Convention is inadmissible as being premature and/or on the ground that domestic remedies have not yet been exhausted. Accordingly, this complaint must be rejected as",
+        "link_target": "/case/001-223629#p16"
+      },
+      {
+        "doc_id": "001-182755",
+        "case_name": "Khaksar v. The United Kingdom",
+        "doc_type": "decision",
+        "paragraph_id": "001-182755§34",
+        "quote": "Accordingly, the Court considers that the applicant has failed to exhaust all domestic remedies available to him and that the application must be rejected pursuant to Article 35 § 1 of the Convention.\nFor these reasons, the Court, unanimously,\nDeclares the application",
+        "link_target": "/case/001-182755#p34"
+      }
+    ],
+    "count": 27,
+    "scope_total": null,
+    "explanation": "27 inadmissible Court decisions in the demo snapshot concern deportation, expulsion or extradition. A decision can raise several Articles, so the rows add up to more than the total. HUDOC metadata rarely says why a decision was inadmissible, so the reasons come from the decision text; three examples are cited."
+  },
+  "refused_or_not_in_sources": false,
+  "steps": [
+    {
+      "step": "route",
+      "model": "claude-haiku-5-5",
+      "tokens_in": 395,
+      "tokens_out": 10,
+      "tokens_cached": 0,
+      "cost_usd": 4.4e-05,
+      "latency_ms": 290.0
+    },
+    {
+      "step": "generate",
+      "model": "claude-sonnet-5-5",
+      "tokens_in": 2200,
+      "tokens_out": 180,
+      "tokens_cached": 1800,
+      "cost_usd": 0.00278,
+      "latency_ms": 1900.0
+    }
+  ],
+  "total_cost_usd": 0.002824,
+  "total_latency_ms": 2190.0,
+  "models_used": [
+    "claude-sonnet-5-5",
+    "claude-haiku-5-5"
+  ]
+}

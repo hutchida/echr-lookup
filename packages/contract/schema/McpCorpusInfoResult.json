@@ -1,0 +1,246 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$ref": "#/$defs/McpCorpusInfoResult",
+  "$defs": {
+    "McpCorpusInfoResult": {
+      "type": "object",
+      "properties": {
+        "corpus": {
+          "type": "object",
+          "properties": {
+            "documents": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991,
+              "description": "documents loaded for this data_source"
+            },
+            "data_source": {
+              "type": "string",
+              "enum": [
+                "snapshot",
+                "full"
+              ]
+            },
+            "scope": {
+              "type": "string",
+              "maxLength": 200,
+              "description": "e.g. 'UK cases only (plus the Convention and the Human Rights Act 1998)'"
+            },
+            "sample_note": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "maxLength": 300
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "snapshot mode: 'Small committed sample, not the full HUDOC download.'; full mode: null"
+            }
+          },
+          "required": [
+            "documents",
+            "data_source",
+            "scope",
+            "sample_note"
+          ],
+          "additionalProperties": false,
+          "description": "what the corpus covers: 'not found here' does not mean the Court never decided it"
+        },
+        "totals": {
+          "type": "object",
+          "properties": {
+            "documents": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "paragraphs": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            }
+          },
+          "required": [
+            "documents",
+            "paragraphs"
+          ],
+          "additionalProperties": false
+        },
+        "by_doc_type": {
+          "maxItems": 5,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "type": "string",
+                "enum": [
+                  "judgment",
+                  "decision",
+                  "communicated",
+                  "legal_summary",
+                  "legislation"
+                ]
+              },
+              "label": {
+                "type": "string",
+                "enum": [
+                  "Judgment",
+                  "Decision",
+                  "Communicated case",
+                  "Legal summary",
+                  "Legislation"
+                ],
+                "description": "plain label for doc_type; a Legal summary is the Court's digest, not the judgment itself"
+              },
+              "count": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              }
+            },
+            "required": [
+              "key",
+              "label",
+              "count"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "by_outcome": {
+          "maxItems": 9,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "type": "string",
+                "enum": [
+                  "violation",
+                  "no_violation",
+                  "mixed",
+                  "inadmissible",
+                  "partly_inadmissible",
+                  "struck_out",
+                  "admissible",
+                  "other",
+                  "not_applicable"
+                ]
+              },
+              "label": {
+                "type": "string",
+                "maxLength": 200
+              },
+              "count": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              }
+            },
+            "required": [
+              "key",
+              "label",
+              "count"
+            ],
+            "additionalProperties": false
+          },
+          "description": "normalised outcome; label explains it in plain words"
+        },
+        "by_article": {
+          "maxItems": 25,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "type": "string",
+                "maxLength": 20
+              },
+              "count": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              }
+            },
+            "required": [
+              "key",
+              "count"
+            ],
+            "additionalProperties": false
+          },
+          "description": "top Convention articles by number of documents, most frequent first (8-1 counts as 8)"
+        },
+        "year_range": {
+          "type": "object",
+          "properties": {
+            "from": {
+              "type": "integer",
+              "minimum": -9007199254740991,
+              "maximum": 9007199254740991
+            },
+            "to": {
+              "type": "integer",
+              "minimum": -9007199254740991,
+              "maximum": 9007199254740991
+            }
+          },
+          "required": [
+            "from",
+            "to"
+          ],
+          "additionalProperties": false
+        },
+        "missing": {
+          "maxItems": 8,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "what": {
+                "type": "string",
+                "maxLength": 200
+              },
+              "count": {
+                "anyOf": [
+                  {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "description": "how many, when known"
+              },
+              "why": {
+                "type": "string",
+                "maxLength": 400
+              }
+            },
+            "required": [
+              "what",
+              "count",
+              "why"
+            ],
+            "additionalProperties": false
+          },
+          "description": "what is NOT in the corpus and why (e.g. scanned decisions with no text, Commission reports)"
+        }
+      },
+      "required": [
+        "corpus",
+        "totals",
+        "by_doc_type",
+        "by_outcome",
+        "by_article",
+        "year_range",
+        "missing"
+      ],
+      "additionalProperties": false,
+      "description": "corpus_info result: what the corpus covers and what it lacks"
+    }
+  }
+}

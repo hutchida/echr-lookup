@@ -1,0 +1,13 @@
+{
+  "doc_types": [
+    "judgment"
+  ],
+  "chambers": [
+    "Grand Chamber"
+  ],
+  "outcomes": [
+    "violation",
+    "mixed"
+  ],
+  "count_of": "total_and_subset"
+}

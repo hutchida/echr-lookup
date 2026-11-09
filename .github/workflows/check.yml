@@ -1,0 +1,48 @@
+name: check
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+concurrency:
+  group: check-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Start ParadeDB (Postgres + pg_search + pgvector)
+        run: docker compose up -d --wait
+
+      - uses: pnpm/action-setup@v4 # version comes from package.json "packageManager"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+          cache: pnpm
+
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: "0.9.0"
+          enable-cache: true
+          cache-dependency-glob: py/uv.lock
+
+      - name: Install JS dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Install Python dependencies
+        working-directory: py
+        run: uv sync --locked
+
+      - name: pnpm check
+        run: pnpm check
+        env:
+          DATABASE_URL: postgresql://echr:echr@localhost:5433/echr
+          DATA_SOURCE: snapshot
+          # Present for later gates; tests must not make live LLM calls in CI.
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}

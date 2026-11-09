@@ -1,0 +1,208 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$ref": "#/$defs/SourceDocument",
+  "$defs": {
+    "SourceDocument": {
+      "type": "object",
+      "properties": {
+        "item_id": {
+          "type": "string",
+          "maxLength": 40,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*$",
+          "description": "HUDOC item id, e.g. 001-57619; legislation uses echr-convention / ukpga-1998-42"
+        },
+        "case_name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300,
+          "description": "HUDOC docname without the 'CASE OF ' prefix"
+        },
+        "application_numbers": {
+          "maxItems": 200,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 40
+          },
+          "description": "e.g. ['14038/88']; empty for legislation"
+        },
+        "ecli": {
+          "description": "ECLI if HUDOC has one (older documents: null)",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "doc_type": {
+          "type": "string",
+          "enum": [
+            "judgment",
+            "decision",
+            "communicated",
+            "legal_summary",
+            "legislation"
+          ]
+        },
+        "chamber": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "Grand Chamber",
+                "Chamber",
+                "Committee"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "null for communicated cases and legislation"
+        },
+        "date": {
+          "type": "string",
+          "format": "date",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))$",
+          "description": "judgment / decision / summary date (HUDOC kpdate); legislation: signature or Royal Assent date"
+        },
+        "articles": {
+          "maxItems": 200,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 20
+          },
+          "description": "HUDOC article codes: '3', '8-1', 'P1-3', '35-3-a'"
+        },
+        "outcome_raw": {
+          "anyOf": [
+            {
+              "type": "string",
+              "maxLength": 5000
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "HUDOC `conclusion` verbatim"
+        },
+        "outcome": {
+          "type": "string",
+          "enum": [
+            "violation",
+            "no_violation",
+            "mixed",
+            "inadmissible",
+            "partly_inadmissible",
+            "struck_out",
+            "admissible",
+            "other",
+            "not_applicable"
+          ],
+          "description": "normalised outcome; see shared.ts"
+        },
+        "inadmissibility_grounds": {
+          "anyOf": [
+            {
+              "maxItems": 12,
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "manifestly_ill_founded",
+                  "non_exhaustion",
+                  "out_of_time",
+                  "incompatible_ratione_materiae",
+                  "incompatible_ratione_personae",
+                  "incompatible_ratione_temporis",
+                  "incompatible_ratione_loci",
+                  "abuse_of_right",
+                  "no_significant_disadvantage",
+                  "substantially_same",
+                  "not_a_victim",
+                  "other"
+                ]
+              }
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "why (part of) the application was declared inadmissible; null = not applicable (no inadmissibility) or not extracted yet"
+        },
+        "inadmissibility_grounds_source": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "metadata",
+                "text"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "metadata = stated in HUDOC `conclusion`; text = extracted from the decision text; null iff grounds are null"
+        },
+        "importance": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 4
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "HUDOC importance: 1 = key case ... 4 = low"
+        },
+        "language": {
+          "type": "string",
+          "enum": [
+            "en",
+            "fr"
+          ]
+        },
+        "source_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "description": "sha256 of the stored file"
+        },
+        "data_source": {
+          "type": "string",
+          "enum": [
+            "snapshot",
+            "full"
+          ]
+        }
+      },
+      "required": [
+        "item_id",
+        "case_name",
+        "application_numbers",
+        "ecli",
+        "doc_type",
+        "chamber",
+        "date",
+        "articles",
+        "outcome_raw",
+        "outcome",
+        "inadmissibility_grounds",
+        "inadmissibility_grounds_source",
+        "importance",
+        "language",
+        "source_url",
+        "sha256",
+        "data_source"
+      ],
+      "additionalProperties": false,
+      "description": "One ingested document (case, decision, summary or legislation)"
+    }
+  }
+}

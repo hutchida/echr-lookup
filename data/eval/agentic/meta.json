@@ -1,0 +1,8 @@
+{
+  "spend_since": "2026-11-04T17:23:58Z",
+  "spend_since_note": "cost_log in echr_m2 was copied from the integration DB; rows up to this timestamp pre-date M2",
+  "cap_usd": 8.0,
+  "db": "echr_m2",
+  "docs": 98,
+  "server": "python -m echr_mcp --transport stdio"
+}

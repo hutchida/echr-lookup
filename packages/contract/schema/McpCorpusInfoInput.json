@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$ref": "#/$defs/McpCorpusInfoInput",
+  "$defs": {
+    "McpCorpusInfoInput": {
+      "type": "object",
+      "properties": {},
+      "additionalProperties": false,
+      "description": "corpus_info takes no arguments"
+    }
+  }
+}

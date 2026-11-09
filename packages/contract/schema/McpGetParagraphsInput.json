@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$ref": "#/$defs/McpGetParagraphsInput",
+  "$defs": {
+    "McpGetParagraphsInput": {
+      "type": "object",
+      "properties": {
+        "paragraph_ids": {
+          "minItems": 1,
+          "maxItems": 10,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 64,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*§[A-Za-z0-9._-]+$"
+          },
+          "description": "paragraph ids from search_case_law or get_case, e.g. ['001-58004§79']"
+        },
+        "neighbours": {
+          "description": "also return this many paragraphs before and after each one (default 0, max 2)",
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2
+        }
+      },
+      "required": [
+        "paragraph_ids"
+      ],
+      "additionalProperties": false,
+      "description": "get_paragraphs arguments"
+    }
+  }
+}

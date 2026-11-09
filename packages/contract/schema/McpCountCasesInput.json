@@ -1,0 +1,158 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$ref": "#/$defs/McpCountCasesInput",
+  "$defs": {
+    "McpCountCasesInput": {
+      "type": "object",
+      "properties": {
+        "group_by": {
+          "type": "string",
+          "enum": [
+            "none",
+            "reason",
+            "article",
+            "outcome",
+            "year",
+            "doc_type"
+          ],
+          "description": "'none' = just a count; 'reason' = why applications were inadmissible; 'article' = which Convention articles; 'outcome' = breakdown by result; 'year' = per year; 'doc_type' = per document type"
+        },
+        "topic": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "deportation"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "'deportation' = deportation, expulsion, removal or extradition cases (defined in the result)"
+        },
+        "keywords": {
+          "maxItems": 4,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z -]{2,30}$"
+          },
+          "description": "other subject words the text must contain (lower case); usually empty; never 'uk' (every case is a UK case)"
+        },
+        "articles": {
+          "maxItems": 5,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^(?:P\\d+-)?\\d{1,2}$"
+          },
+          "description": "Convention articles, e.g. ['3', '8', 'P1-1']"
+        },
+        "doc_types": {
+          "maxItems": 4,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "judgment",
+              "decision",
+              "communicated",
+              "legal_summary"
+            ]
+          },
+          "description": "default (empty) = judgments, decisions and communicated cases; legal summaries would double count"
+        },
+        "outcomes": {
+          "maxItems": 7,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "violation",
+              "no_violation",
+              "mixed",
+              "inadmissible",
+              "partly_inadmissible",
+              "struck_out",
+              "admissible"
+            ]
+          },
+          "description": "'found a violation' / 'at least one violation' = ['violation', 'mixed']; 'declared inadmissible' = ['inadmissible'] (add 'partly_inadmissible' only for 'in whole or in part')"
+        },
+        "chambers": {
+          "maxItems": 3,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "Grand Chamber",
+              "Chamber",
+              "Committee"
+            ]
+          },
+          "description": "'Grand Chamber', 'Chamber' (the ordinary Chamber, not the Grand Chamber) or 'Committee'"
+        },
+        "grounds": {
+          "maxItems": 12,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "manifestly_ill_founded",
+              "non_exhaustion",
+              "out_of_time",
+              "incompatible_ratione_materiae",
+              "incompatible_ratione_personae",
+              "incompatible_ratione_temporis",
+              "incompatible_ratione_loci",
+              "abuse_of_right",
+              "no_significant_disadvantage",
+              "substantially_same",
+              "not_a_victim",
+              "other"
+            ]
+          },
+          "description": "only decisions resting on these inadmissibility grounds"
+        },
+        "count_of": {
+          "type": "string",
+          "enum": [
+            "total",
+            "top_group",
+            "total_and_subset"
+          ],
+          "description": "'total' = matching documents; 'top_group' = documents in the most common group (needs group_by); 'total_and_subset' = 'how many X, and how many of them Y': the total without the outcome filter AND the subset with it"
+        },
+        "date_from": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date",
+              "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))$"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "first date included, YYYY-MM-DD"
+        },
+        "date_to": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date",
+              "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))$"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "last date included, YYYY-MM-DD"
+        }
+      },
+      "additionalProperties": false,
+      "description": "count_cases arguments: a fixed, validated template (no SQL)"
+    }
+  }
+}

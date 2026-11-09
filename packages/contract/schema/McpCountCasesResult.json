@@ -1,0 +1,420 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$ref": "#/$defs/McpCountCasesResult",
+  "$defs": {
+    "McpCountCasesResult": {
+      "type": "object",
+      "properties": {
+        "answer": {
+          "type": "string",
+          "maxLength": 1000,
+          "description": "every number asked for, in a plain sentence naming every filter"
+        },
+        "count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991,
+          "description": "the number asked for: matching documents, or the documents in the top group"
+        },
+        "scope_total": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "count_of 'total_and_subset': documents in scope before the outcome filter (count is the subset); otherwise null"
+        },
+        "top_group": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "key": {
+                  "type": "string",
+                  "maxLength": 60
+                },
+                "label": {
+                  "type": "string",
+                  "maxLength": 120
+                },
+                "count": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                }
+              },
+              "required": [
+                "key",
+                "label",
+                "count"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "count_of 'top_group': the most common group; otherwise null"
+        },
+        "filters": {
+          "type": "string",
+          "maxLength": 600,
+          "description": "the set counted, in plain words"
+        },
+        "definitions": {
+          "maxItems": 10,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 400
+          },
+          "description": "definitions used, e.g. what 'found a violation' and 'deportation case' mean here"
+        },
+        "sql": {
+          "type": "string",
+          "maxLength": 4000,
+          "description": "the exact read-only SQL that was run"
+        },
+        "columns": {
+          "maxItems": 6,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 40
+          }
+        },
+        "rows": {
+          "maxItems": 20,
+          "type": "array",
+          "items": {
+            "maxItems": 6,
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "maxLength": 80
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          }
+        },
+        "matching_cases": {
+          "maxItems": 20,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "doc_id": {
+                "type": "string",
+                "maxLength": 40,
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*$"
+              },
+              "case_name": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200,
+                "description": "display name, e.g. 'Chahal v. the United Kingdom' (HUDOC's upper-case names are title-cased)"
+              },
+              "doc_type": {
+                "type": "string",
+                "enum": [
+                  "judgment",
+                  "decision",
+                  "communicated",
+                  "legal_summary",
+                  "legislation"
+                ]
+              },
+              "doc_type_label": {
+                "type": "string",
+                "enum": [
+                  "Judgment",
+                  "Decision",
+                  "Communicated case",
+                  "Legal summary",
+                  "Legislation"
+                ],
+                "description": "plain label for doc_type; a Legal summary is the Court's digest, not the judgment itself"
+              },
+              "date": {
+                "type": "string",
+                "format": "date",
+                "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))$"
+              },
+              "outcome": {
+                "type": "string",
+                "enum": [
+                  "violation",
+                  "no_violation",
+                  "mixed",
+                  "inadmissible",
+                  "partly_inadmissible",
+                  "struck_out",
+                  "admissible",
+                  "other",
+                  "not_applicable"
+                ]
+              },
+              "hudoc_url": {
+                "type": "string",
+                "maxLength": 400,
+                "format": "uri",
+                "description": "the document's public page (HUDOC; legislation: its official source). Where the result has a quote or text, it ends '#:~:text=<its first 6-8 words, percent-encoded>': a browser that supports text fragments opens the page and highlights those words. A case-level link with no quote has no fragment"
+              }
+            },
+            "required": [
+              "doc_id",
+              "case_name",
+              "doc_type",
+              "doc_type_label",
+              "date",
+              "outcome",
+              "hudoc_url"
+            ],
+            "additionalProperties": false
+          },
+          "description": "up to 20 counted documents, most recent first; examples only: the SQL is the evidence for the count"
+        },
+        "params": {
+          "type": "object",
+          "properties": {
+            "group_by": {
+              "type": "string",
+              "enum": [
+                "none",
+                "reason",
+                "article",
+                "outcome",
+                "year",
+                "doc_type"
+              ],
+              "description": "'none' = just a count; 'reason' = why applications were inadmissible; 'article' = which Convention articles; 'outcome' = breakdown by result; 'year' = per year; 'doc_type' = per document type"
+            },
+            "topic": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "enum": [
+                    "deportation"
+                  ]
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "'deportation' = deportation, expulsion, removal or extradition cases (defined in the result)"
+            },
+            "keywords": {
+              "maxItems": 4,
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-z][a-z -]{2,30}$"
+              },
+              "description": "other subject words the text must contain (lower case); usually empty; never 'uk' (every case is a UK case)"
+            },
+            "articles": {
+              "maxItems": 5,
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^(?:P\\d+-)?\\d{1,2}$"
+              },
+              "description": "Convention articles, e.g. ['3', '8', 'P1-1']"
+            },
+            "doc_types": {
+              "maxItems": 4,
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "judgment",
+                  "decision",
+                  "communicated",
+                  "legal_summary"
+                ]
+              },
+              "description": "default (empty) = judgments, decisions and communicated cases; legal summaries would double count"
+            },
+            "outcomes": {
+              "maxItems": 7,
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "violation",
+                  "no_violation",
+                  "mixed",
+                  "inadmissible",
+                  "partly_inadmissible",
+                  "struck_out",
+                  "admissible"
+                ]
+              },
+              "description": "'found a violation' / 'at least one violation' = ['violation', 'mixed']; 'declared inadmissible' = ['inadmissible'] (add 'partly_inadmissible' only for 'in whole or in part')"
+            },
+            "chambers": {
+              "maxItems": 3,
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "Grand Chamber",
+                  "Chamber",
+                  "Committee"
+                ]
+              },
+              "description": "'Grand Chamber', 'Chamber' (the ordinary Chamber, not the Grand Chamber) or 'Committee'"
+            },
+            "grounds": {
+              "maxItems": 12,
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "manifestly_ill_founded",
+                  "non_exhaustion",
+                  "out_of_time",
+                  "incompatible_ratione_materiae",
+                  "incompatible_ratione_personae",
+                  "incompatible_ratione_temporis",
+                  "incompatible_ratione_loci",
+                  "abuse_of_right",
+                  "no_significant_disadvantage",
+                  "substantially_same",
+                  "not_a_victim",
+                  "other"
+                ]
+              },
+              "description": "only decisions resting on these inadmissibility grounds"
+            },
+            "count_of": {
+              "type": "string",
+              "enum": [
+                "total",
+                "top_group",
+                "total_and_subset"
+              ],
+              "description": "'total' = matching documents; 'top_group' = documents in the most common group (needs group_by); 'total_and_subset' = 'how many X, and how many of them Y': the total without the outcome filter AND the subset with it"
+            },
+            "date_from": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date",
+                  "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))$"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "first date included, YYYY-MM-DD"
+            },
+            "date_to": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date",
+                  "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))$"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "last date included, YYYY-MM-DD"
+            }
+          },
+          "required": [
+            "group_by",
+            "topic",
+            "keywords",
+            "articles",
+            "doc_types",
+            "outcomes",
+            "chambers",
+            "grounds",
+            "count_of",
+            "date_from",
+            "date_to"
+          ],
+          "additionalProperties": false,
+          "description": "the template parameters actually used, after validation and defaults"
+        },
+        "corpus": {
+          "type": "object",
+          "properties": {
+            "documents": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991,
+              "description": "documents loaded for this data_source"
+            },
+            "data_source": {
+              "type": "string",
+              "enum": [
+                "snapshot",
+                "full"
+              ]
+            },
+            "scope": {
+              "type": "string",
+              "maxLength": 200,
+              "description": "e.g. 'UK cases only (plus the Convention and the Human Rights Act 1998)'"
+            },
+            "sample_note": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "maxLength": 300
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "snapshot mode: 'Small committed sample, not the full HUDOC download.'; full mode: null"
+            }
+          },
+          "required": [
+            "documents",
+            "data_source",
+            "scope",
+            "sample_note"
+          ],
+          "additionalProperties": false,
+          "description": "what the corpus covers: 'not found here' does not mean the Court never decided it"
+        }
+      },
+      "required": [
+        "answer",
+        "count",
+        "scope_total",
+        "top_group",
+        "filters",
+        "definitions",
+        "sql",
+        "columns",
+        "rows",
+        "matching_cases",
+        "params",
+        "corpus"
+      ],
+      "additionalProperties": false,
+      "description": "count_cases result: numbers from SQL over the corpus metadata"
+    }
+  }
+}

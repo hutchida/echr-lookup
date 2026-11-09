@@ -1,0 +1,17 @@
+{
+  "group_by": "reason",
+  "topic": "deportation",
+  "keywords": [],
+  "articles": [],
+  "doc_types": [
+    "decision"
+  ],
+  "outcomes": [
+    "inadmissible"
+  ],
+  "chambers": [],
+  "grounds": [],
+  "count_of": "top_group",
+  "date_from": "1990-01-01",
+  "date_to": "2025-12-31"
+}

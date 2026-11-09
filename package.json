@@ -1,0 +1,39 @@
+{
+  "name": "echr-lookup",
+  "private": true,
+  "description": "Ask questions of UK–ECHR case law; every claim cites the exact paragraph.",
+  "packageManager": "pnpm@10.34.7",
+  "engines": {
+    "node": ">=22.22.0 <23",
+    "pnpm": "10.34.7"
+  },
+  "scripts": {
+    "dev": "pnpm run \"/^dev:/\"",
+    "dev:web": "pnpm --filter @echr/web dev",
+    "dev:api": "cd py && uv run --group ml uvicorn api.main:app --reload --port ${API_PORT:-8000}",
+    "db:up": "docker compose up -d --wait",
+    "db:down": "docker compose down",
+    "ingest:snapshot": "cd py && uv run --group ml python -m rag.ingest --source snapshot",
+    "ingest:full": "cd py && uv run --group ml python -m rag.ingest --source full",
+    "search": "cd py && uv run --group ml python -m rag.search",
+    "ask": "cd py && uv run --group ml python -m rag.answer",
+    "mcp:stdio": "cd py && uv run --group ml python -m echr_mcp --transport stdio",
+    "mcp:http": "cd py && uv run --group ml python -m echr_mcp --transport http --port ${MCP_PORT:-8100}",
+    "eval:snapshot": "cd py && uv run --group ml python -m rag.eval --source snapshot",
+    "eval:agentic": "cd py && uv run --group ml python -m rag.eval.agentic",
+    "capture": "pnpm --filter @echr/capture capture",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "lint": "pnpm -r --if-present lint",
+    "test": "pnpm -r --if-present test",
+    "contract:export": "pnpm --filter @echr/contract export",
+    "check:ts": "pnpm typecheck && pnpm lint && pnpm test",
+    "check:py": "cd py && uv run ruff check && uv run ruff format --check && uv run pytest -q",
+    "check": "pnpm check:ts && pnpm check:py"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.5",
+    "eslint": "9.39.5",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.72.1"
+  }
+}

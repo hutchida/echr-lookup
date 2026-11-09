@@ -1,0 +1,16 @@
+{
+  "id": "explain-001",
+  "question": "Can the UK extradite a person who faces the death row phenomenon?",
+  "type": "explain",
+  "expected_paragraph_ids": [
+    "001-57619§91",
+    "001-57619§111"
+  ],
+  "reference_notes": "Soering: extradition can engage Article 3 where there are substantial grounds to believe the person faces a real risk of inhuman or degrading treatment in the requesting state (§91), and exposure to the death row phenomenon in Virginia would breach it (§111).",
+  "status": "reviewed",
+  "tags": [
+    "article-3",
+    "extradition",
+    "soering"
+  ]
+}

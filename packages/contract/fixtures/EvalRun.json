@@ -1,0 +1,75 @@
+{
+  "run_id": "g0b-retrieval-only-demo",
+  "started_at": "2026-11-03T16:39:20Z",
+  "finished_at": "2026-11-03T16:39:20Z",
+  "data_source": "snapshot",
+  "config": {
+    "chunking": "recursive",
+    "mode": "hybrid",
+    "rerank": false,
+    "embedder_model": "BAAI/bge-small-en-v1.5",
+    "generator_model": null,
+    "judge_model": null
+  },
+  "metrics": {
+    "recall_at_5": 0.0,
+    "recall_at_10": 0.25,
+    "mrr": 0.07142857142857142,
+    "faithfulness": null,
+    "citation_accuracy": null,
+    "neutrality": null
+  },
+  "items": [
+    {
+      "item_id": "explain-001",
+      "retrieved_paragraph_ids": [
+        "001-57619§81",
+        "001-57619§92",
+        "001-57619§99",
+        "001-57619§98",
+        "001-57619§76",
+        "001-57619§105",
+        "001-57619§111",
+        "001-57619§107",
+        "001-57619§37",
+        "002-74§u1"
+      ],
+      "recall_at_5": 0.0,
+      "recall_at_10": 0.5,
+      "reciprocal_rank": 0.14285714285714285,
+      "faithfulness": null,
+      "citation_accuracy": null,
+      "neutrality": null,
+      "latency_ms": 31.0
+    },
+    {
+      "item_id": "neutrality-001",
+      "retrieved_paragraph_ids": [
+        "001-70442§79",
+        "001-70442§45",
+        "001-70442§41",
+        "001-70442§81",
+        "002-3706§u6",
+        "002-3706§u1",
+        "002-3706§u2",
+        "002-3706§u3",
+        "002-3706§u4",
+        "002-3706§u7"
+      ],
+      "recall_at_5": 0.0,
+      "recall_at_10": 0.0,
+      "reciprocal_rank": 0.0,
+      "faithfulness": null,
+      "citation_accuracy": null,
+      "neutrality": null,
+      "latency_ms": 29.9
+    }
+  ],
+  "cost_usd": 0.0,
+  "tokens_in": 0,
+  "tokens_out": 0,
+  "timings_ms": {
+    "total": 60.9,
+    "mean_per_item": 30.5
+  }
+}

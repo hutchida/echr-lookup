@@ -1,0 +1,186 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$ref": "#/$defs/McpGetParagraphsResult",
+  "$defs": {
+    "McpGetParagraphsResult": {
+      "type": "object",
+      "properties": {
+        "paragraphs": {
+          "maxItems": 50,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "paragraph_id": {
+                "type": "string",
+                "maxLength": 64,
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*§[A-Za-z0-9._-]+$"
+              },
+              "para_label": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 50,
+                "description": "readable name of the paragraph, for display and citing: '§79' for a numbered paragraph; 'Law, para 2' for an unnumbered one (n counts within that section of the document, in order); 'Article 8' for legislation. The stable id is paragraph_id"
+              },
+              "doc_id": {
+                "type": "string",
+                "maxLength": 40,
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*$"
+              },
+              "case_name": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200,
+                "description": "display name, e.g. 'Chahal v. the United Kingdom' (HUDOC's upper-case names are title-cased)"
+              },
+              "doc_type": {
+                "type": "string",
+                "enum": [
+                  "judgment",
+                  "decision",
+                  "communicated",
+                  "legal_summary",
+                  "legislation"
+                ]
+              },
+              "doc_type_label": {
+                "type": "string",
+                "enum": [
+                  "Judgment",
+                  "Decision",
+                  "Communicated case",
+                  "Legal summary",
+                  "Legislation"
+                ],
+                "description": "plain label for doc_type; a Legal summary is the Court's digest, not the judgment itself"
+              },
+              "number": {
+                "anyOf": [
+                  {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 9007199254740991
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "description": "paragraph number as printed; null for operative/unnumbered items"
+              },
+              "section": {
+                "type": "string",
+                "enum": [
+                  "Procedure",
+                  "The Facts",
+                  "The Law",
+                  "Operative provisions",
+                  "Other"
+                ]
+              },
+              "text": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 20000
+              },
+              "truncated": {
+                "type": "boolean",
+                "description": "true = text was cut (ends with '…') to keep the result under 25 KB; request it alone for the full text"
+              },
+              "requested": {
+                "type": "boolean",
+                "description": "true = you asked for it; false = a neighbour"
+              },
+              "hudoc_url": {
+                "type": "string",
+                "maxLength": 400,
+                "format": "uri",
+                "description": "the document's public page (HUDOC; legislation: its official source). Where the result has a quote or text, it ends '#:~:text=<its first 6-8 words, percent-encoded>': a browser that supports text fragments opens the page and highlights those words. A case-level link with no quote has no fragment"
+              },
+              "cite": {
+                "type": "string",
+                "maxLength": 200,
+                "description": "ready-to-paste citation '[<case name>, <doc type label>, <para_label>]', e.g. '[Chahal v. the United Kingdom, Judgment, §79]' or '[Harkins and Edwards v. the United Kingdom, Legal summary, Law, para 2]'. Copy it verbatim after the claim it supports; when two paragraphs of one result would share a string, the doc id is added to the doc type, e.g. 'Judgment (001-58004)'"
+              }
+            },
+            "required": [
+              "paragraph_id",
+              "para_label",
+              "doc_id",
+              "case_name",
+              "doc_type",
+              "doc_type_label",
+              "number",
+              "section",
+              "text",
+              "truncated",
+              "requested",
+              "hudoc_url",
+              "cite"
+            ],
+            "additionalProperties": false
+          },
+          "description": "grouped by document, in document order; each paragraph once"
+        },
+        "not_found": {
+          "maxItems": 10,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 64
+          },
+          "description": "requested ids not in this corpus"
+        },
+        "corpus": {
+          "type": "object",
+          "properties": {
+            "documents": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991,
+              "description": "documents loaded for this data_source"
+            },
+            "data_source": {
+              "type": "string",
+              "enum": [
+                "snapshot",
+                "full"
+              ]
+            },
+            "scope": {
+              "type": "string",
+              "maxLength": 200,
+              "description": "e.g. 'UK cases only (plus the Convention and the Human Rights Act 1998)'"
+            },
+            "sample_note": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "maxLength": 300
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "snapshot mode: 'Small committed sample, not the full HUDOC download.'; full mode: null"
+            }
+          },
+          "required": [
+            "documents",
+            "data_source",
+            "scope",
+            "sample_note"
+          ],
+          "additionalProperties": false,
+          "description": "what the corpus covers: 'not found here' does not mean the Court never decided it"
+        }
+      },
+      "required": [
+        "paragraphs",
+        "not_found",
+        "corpus"
+      ],
+      "additionalProperties": false,
+      "description": "get_paragraphs result: full text with section labels"
+    }
+  }
+}

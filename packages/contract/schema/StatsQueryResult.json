@@ -1,0 +1,146 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$ref": "#/$defs/StatsQueryResult",
+  "$defs": {
+    "StatsQueryResult": {
+      "type": "object",
+      "properties": {
+        "question": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "sql": {
+          "type": "string",
+          "maxLength": 1500,
+          "description": "the read-only SQL that produced the rows"
+        },
+        "columns": {
+          "maxItems": 6,
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "rows": {
+          "maxItems": 20,
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "maxLength": 80
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          }
+        },
+        "matching_cases": {
+          "maxItems": 8,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "doc_id": {
+                "type": "string",
+                "maxLength": 40,
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*$"
+              },
+              "case_name": {
+                "type": "string",
+                "maxLength": 120
+              },
+              "doc_type": {
+                "type": "string",
+                "enum": [
+                  "judgment",
+                  "decision",
+                  "communicated",
+                  "legal_summary",
+                  "legislation"
+                ]
+              },
+              "paragraph_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "maxLength": 64,
+                    "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*§[A-Za-z0-9._-]+$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "description": "the quoted paragraph; null when no paragraph honestly illustrates the filter (e.g. no operative clause states the violation)"
+              },
+              "quote": {
+                "type": "string",
+                "maxLength": 300,
+                "description": "verbatim snippet from that paragraph; empty when paragraph_id is null"
+              },
+              "link_target": {
+                "type": "string",
+                "maxLength": 200,
+                "description": "/case/<doc_id>#p<ref>, or /case/<doc_id> when no paragraph is quoted"
+              }
+            },
+            "required": [
+              "doc_id",
+              "case_name",
+              "doc_type",
+              "paragraph_id",
+              "quote",
+              "link_target"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991,
+          "description": "number of matching documents (can exceed rows shown)"
+        },
+        "scope_total": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "when the question asks for a total AND how many of those have an outcome: the documents in the scope before the outcome filter (count is the subset); otherwise null"
+        },
+        "explanation": {
+          "type": "string",
+          "maxLength": 1000
+        }
+      },
+      "required": [
+        "question",
+        "sql",
+        "columns",
+        "rows",
+        "matching_cases",
+        "count",
+        "scope_total",
+        "explanation"
+      ],
+      "additionalProperties": false,
+      "description": "Counting-question result, from SQL over metadata. Returned inside Answer.stats by POST /ask (route = stats)"
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "request_id": "req-a1-fixture-answer-first",
+  "question": "Can the UK extradite a person who faces the death row phenomenon?",
+  "route": "rag",
+  "answer_text": "Yes, but only within limits: the Court has held that extradition can breach Article 3 where there is a real risk of ill-treatment abroad, and it found such a breach in Soering [Soering v UK §91, §111].\n\nThe test:\nExtradition can engage the sending state's responsibility under Article 3 where there is a real risk of ill-treatment abroad [Soering v UK §91].\n\nHow the Court applied it:\nThe Court found the death row phenomenon in Virginia reached the Article 3 threshold [Soering v UK §111].",
+  "claims": [
+    {
+      "id": "c1",
+      "text": "Yes, but only within limits: the Court has held that extradition can breach Article 3 where there is a real risk of ill-treatment abroad, and it found such a breach in Soering",
+      "citation_ids": [
+        "001-57619§91",
+        "001-57619§111"
+      ],
+      "status": "supported",
+      "reason": "Paragraphs 91 and 111 together state the test and its application.",
+      "role": "short_answer"
+    },
+    {
+      "id": "c2",
+      "text": "Extradition can engage the sending state's responsibility under Article 3 where there is a real risk of ill-treatment abroad.",
+      "citation_ids": [
+        "001-57619§91"
+      ],
+      "status": "supported",
+      "reason": "Paragraph 91 states the test in these terms.",
+      "role": "point",
+      "group": "The test"
+    },
+    {
+      "id": "c3",
+      "text": "The Court found the death row phenomenon in Virginia reached the Article 3 threshold.",
+      "citation_ids": [
+        "001-57619§111"
+      ],
+      "status": "supported",
+      "reason": "Paragraph 111 states this finding.",
+      "role": "point",
+      "group": "How the Court applied it"
+    }
+  ],
+  "citations": [
+    {
+      "paragraph_id": "001-57619§91",
+      "doc_id": "001-57619",
+      "case_name": "Soering v. The United Kingdom",
+      "doc_type": "judgment",
+      "quote": "In sum, the decision by a Contracting State to extradite a fugitive may give rise to an issue under Article 3 (art. 3), and hence engage the responsibility of that State under the Convention, where substantial grounds have been shown for believing that the person concerned, if",
+      "link_target": "/case/001-57619#p91"
+    },
+    {
+      "paragraph_id": "001-57619§111",
+      "doc_id": "001-57619",
+      "case_name": "Soering v. The United Kingdom",
+      "doc_type": "judgment",
+      "quote": "However, in the Court’s view, having regard to the very long period of time spent on death row in such extreme conditions, with the ever present and mounting anguish of awaiting execution of the death penalty, and to the personal circumstances of the applicant, especially his age and mental state",
+      "link_target": "/case/001-57619#p111"
+    }
+  ],
+  "stats": null,
+  "refused_or_not_in_sources": false,
+  "steps": [
+    {
+      "step": "route",
+      "model": "claude-haiku-5-5",
+      "tokens_in": 410,
+      "tokens_out": 12,
+      "tokens_cached": 0,
+      "cost_usd": 4.7e-05,
+      "latency_ms": 310.0
+    },
+    {
+      "step": "retrieve",
+      "model": null,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "tokens_cached": 0,
+      "cost_usd": 0.0,
+      "latency_ms": 22.2
+    },
+    {
+      "step": "generate",
+      "model": "claude-sonnet-5-5",
+      "tokens_in": 3120,
+      "tokens_out": 260,
+      "tokens_cached": 1800,
+      "cost_usd": 0.00542,
+      "latency_ms": 2850.0
+    },
+    {
+      "step": "verify",
+      "model": "claude-haiku-5-5",
+      "tokens_in": 1480,
+      "tokens_out": 90,
+      "tokens_cached": 0,
+      "cost_usd": 0.000193,
+      "latency_ms": 640.0
+    }
+  ],
+  "total_cost_usd": 0.00566,
+  "total_latency_ms": 3822.2,
+  "models_used": [
+    "claude-sonnet-5-5",
+    "claude-haiku-5-5"
+  ]
+}
